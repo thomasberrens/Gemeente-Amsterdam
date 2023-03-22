@@ -4,10 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneSwitcher : MonoBehaviour
+public class SceneSwitcher
 {
-    public void SwitchScene(string sceneName) {
-        DontDestroyOnLoad(gameObject);
+    public static void SwitchScene(string sceneName) {
         SceneManager.LoadScene(sceneName);
     }
 }
