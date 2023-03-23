@@ -18,7 +18,12 @@ public class DialogueController : MonoBehaviour
     private int currentLine = 0;
     private bool isTyping = false;
 
-    private void Start()
+    private void Start()                            
+    {
+        StartDialogue();
+    }
+
+    public void StartDialogue()
     {
         DialogueTextField.text = "";
         StartCoroutine(ShowDialogue());
