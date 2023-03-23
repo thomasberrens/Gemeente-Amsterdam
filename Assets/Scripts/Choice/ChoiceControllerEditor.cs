@@ -32,7 +32,7 @@ public class ChoiceControllerEditor : Editor
             // Add Choice button
             if (GUILayout.Button("Add Choice", GUILayout.Width(100)))
             {
-                choiceController.AddChoice(new Choice(isCorrect, text));
+                choiceController.AddChoice(isCorrect, text);
                 isCorrect = false;
                 text = "";
             }

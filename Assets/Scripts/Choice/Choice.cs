@@ -1,11 +1,7 @@
-﻿[System.Serializable]
-public class Choice {
-    public bool IsCorrect { get; set; }
-    public string Text { get; set; } 
-   
+﻿using UnityEngine;
 
-    public Choice(bool isCorrect, string text) {
-        IsCorrect = isCorrect;
-        Text = text;
-    }
+public class Choice : MonoBehaviour {
+    [field: SerializeField] public bool IsCorrect { get; set; }
+    [field: SerializeField] public string Text { get; set; } 
+    
 }
