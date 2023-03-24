@@ -1,6 +1,7 @@
 # Gemeente-Amsterdam
 
-In deze repository vind je veel informatie over ons examenopdracht.
+In deze repository vind je veel informatie over ons examenopdracht voor gemeente Amsterdam. Ook vind je hier een aantal gevisualiseerde geproduceerde game onderdelen. 
+Onze planning en wiki zijn te vinden hieronder bij belangrijke links.
 
 ## Belangrijke links:
 Er is ook veel informatie te vinden in onze [wiki](https://github.com/thomasberrens/Gemeente-Amsterdam/wiki).
@@ -24,8 +25,10 @@ Maak ook een overzicht van alle onderdelen met een link naar de map waarin deze 
 
 Bijv..
 
+  * !!!!!!!! hier moet een kleine gif komen (niet via link), een een link naar de files die deze feature realiseren
+
 Dean Hendriks:
-  /// hier moet een kleine gif komen (niet via link), een een link naar de files die deze feature realiseren
+
   * [Memory minigame](https://i.gyazo.com/981e1edfe57e9f1bb758d43b3b84c301.mp4)
 
 Jason Dikken:
