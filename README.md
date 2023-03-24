@@ -1,18 +1,18 @@
-### Gemeente-Amsterdam
+# Gemeente-Amsterdam
 
 In deze repository vind je veel informatie over ons examenopdracht.
 
-# Belangrijke links:
+## Belangrijke links:
 Er is ook veel informatie te vinden in onze [wiki](https://github.com/thomasberrens/Gemeente-Amsterdam/wiki).
 Onze planning is te vinden op onze [Trello](https://trello.com/b/I5btxegt/gemeente-amsterdam).
 
-# De opdracht:
+## De opdracht:
 Omschrijf de examenopdracht evt de klant en wat het doel voor de klant is.
 
 Omschrijf ook beknopt wat het idee van je game is. 
 Een complete en uitgebreide beschrijving komt in het functioneel ontwerp (onderdeel van de [wiki](https://github.com/erwinhenraat/VoorbeeldExamenRepo/wiki))
 
-# Geproduceerde Game Onderdelen
+## Geproduceerde Game Onderdelen
 
 ### Visual sheets:
 Individueel- Hiervoor is het nodig om visuele sheets te laten zien van de technische/functioneel onderwerp en/of uitwerking aan de klant en zowel in onze documentatie op GitHub. 
