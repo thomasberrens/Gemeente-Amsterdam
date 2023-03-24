@@ -16,7 +16,7 @@ Een complete en uitgebreide beschrijving komt in het functioneel ontwerp (onderd
 
 ## Geproduceerde Game Onderdelen
 
-### Visual sheets:
+# Visual sheets:
 Individueel- Hiervoor is het nodig om visuele sheets te laten zien van de technische/functioneel onderwerp en/of uitwerking aan de klant en zowel in onze documentatie op GitHub. 
 Een Functioneel ontwerp en een technische ontwerp helpt het voor de klant om het beter te snappen en voor ons om het duidelijk te begrijpen waarmee wij bezig zijn.
 
