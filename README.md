@@ -4,6 +4,7 @@ In deze repository vind je veel informatie over ons examenopdracht.
 
 ## Belangrijke links:
 Er is ook veel informatie te vinden in onze [wiki](https://github.com/thomasberrens/Gemeente-Amsterdam/wiki).
+
 Onze planning is te vinden op onze [Trello](https://trello.com/b/I5btxegt/gemeente-amsterdam).
 
 ## De opdracht:
