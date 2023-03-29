@@ -66,9 +66,6 @@ public class VideoManager : MonoBehaviour
         {
             obj.SetActive(true);
         }
-
-        // Re-enable the player's collider so they can move and interact with objects again
-        player.GetComponent<Collider2D>().enabled = true;
     }
 
     private int GetPlayingCutsceneIndex()
