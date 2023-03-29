@@ -17,7 +17,6 @@ public class VideoManager : MonoBehaviour
 
     [field: SerializeField]public RawImage RawImage { get; set; } 
     [field: SerializeField]public List<Cutscene> cutscenes { get; set; }                // List of cutscenes
-    public GameObject player { get; set; }                      // Reference to player GameObject
     private bool _cutscenePlaying = false;           // Flag to check if cutscene is currently playing
 
     public void Start()
