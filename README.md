@@ -10,7 +10,7 @@ Onze planning is te vinden op onze [Trello](https://trello.com/b/I5btxegt/gemeen
 
 ## De opdracht:
 In het algemeen zal het spel een simulatie zijn van een dag werken bij de gemeente Amsterdam, waarbij de speler interacties en keuzes moet maken die zijn score beïnvloeden. Het spel begint met een startscherm waar de speler het spel kan starten, zodra het spel begint krijg je een korte introductie, je wilt als speler naar je kantoor om je dag te beginnen en te werken totdat je klaar bent met de werkdag. voordat je bij je kantoor bent krijg je al interacties wat bestaat uit valse e-mails, social engineering, valse telefoontjes, oplichters, etc, de interacties krijg je inderdaad ook tijdens de werkdag achter je kantoor.
-Een complete en uitgebreide beschrijving is in het functioneel ontwerp (onderdeel van de [wiki](https://github.com/erwinhenraat/VoorbeeldExamenRepo/wiki))
+Een complete en uitgebreide beschrijving is in het functioneel ontwerp (onderdeel van de [wiki](https://github.com/thomasberrens/Gemeente-Amsterdam/wiki/Functioneel-Ontwerp)
 
 ## Geproduceerde Game Onderdelen
 
