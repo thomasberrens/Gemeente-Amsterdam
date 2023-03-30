@@ -1931,7 +1931,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7651318107351635177, guid: d8116c23dbe0e98448aa00680452550b, type: 3}
       propertyPath: m_Options.m_Options.Array.data[3].m_Text
-      value: 1536x864
+      value: 1536 x 864
       objectReference: {fileID: 0}
     - target: {fileID: 7651318107351635177, guid: d8116c23dbe0e98448aa00680452550b, type: 3}
       propertyPath: m_Options.m_Options.Array.data[4].m_Text
