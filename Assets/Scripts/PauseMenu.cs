@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
-    [Tooltip("IMPORTANT: This prefab needs to be part of a canvas!!!.")]
+    //IMPORTANT: This prefab needs to be part of a canvas!!!
     public static bool GameIsPaused = false;
     
     [SerializeField] private GameObject pauseUiElements;
