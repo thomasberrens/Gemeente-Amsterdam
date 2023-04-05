@@ -33,6 +33,7 @@ public class MenuHandler : MonoBehaviour
 
     public void ShowSettings()
     {
+        Debug.Log("Button Pressed");
         settingsUiElements.SetActive(true);
 
         if (!GameIsPaused) return;
@@ -45,5 +46,10 @@ public class MenuHandler : MonoBehaviour
 
         if (!GameIsPaused) return;
         pauseUiElements.SetActive(true);
+    }
+
+    public static void QuitGame()
+    {
+        Application.Quit();
     }
 }
