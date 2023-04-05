@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class ScoreManager : MonoBehaviour
 {
    public int CurrentScore {get; private set;}
-
+   [field: SerializeField]public int MaxScore { get; private set;}
+   
    public void SetScore(int value)
    {
       CurrentScore = value;

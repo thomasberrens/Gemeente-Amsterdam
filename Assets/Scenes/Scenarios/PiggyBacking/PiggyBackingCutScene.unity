@@ -497,9 +497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RawImage>k__BackingField: {fileID: 2118291905}
   <Cutscenes>k__BackingField:
-  - <VideoClip>k__BackingField: {fileID: 32900000, guid: c7f1b6dd65d242c40995b58cf78dfe20, type: 3}
-    <ObjectsToDisable>k__BackingField: []
-    <ObjectsToEnable>k__BackingField: []
+  - <VideoClip>k__BackingField: {fileID: 0}
   <OnVideoEnd>k__BackingField:
     m_PersistentCalls:
       m_Calls:
