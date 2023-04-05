@@ -1,19 +1,33 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class MenuHandler : MonoBehaviour
 {
     //IMPORTANT: This prefab needs to be part of a canvas!!!
-    public static bool GameIsPaused = false;
+    private bool gameIsPaused = false;
+    private bool isInMainMenu = false;
     
     [SerializeField] private GameObject pauseUiElements;
     [SerializeField] private GameObject settingsUiElements;
+    [SerializeField] [CanBeNull] private GameObject mainMenuUiElements;
+
+    private void Awake()
+    {
+        try { isInMainMenu = mainMenuUiElements.activeSelf; }
+        catch (Exception e)
+        {
+            isInMainMenu = false;
+        }
+    }
+
     private void Update()
     {
-        if (!Input.GetKeyDown(KeyCode.Escape)) return;
+        if (!Input.GetKeyDown(KeyCode.Escape) || isInMainMenu) return;
         
-        if (GameIsPaused) Resume();
+        if (gameIsPaused) Resume();
         else Pause();
     }
 
@@ -21,30 +35,39 @@ public class MenuHandler : MonoBehaviour
     {
         pauseUiElements.SetActive(false);
         Time.timeScale = 1;
-        GameIsPaused = false;
+        gameIsPaused = false;
     }
 
     private void Pause()
     {
         pauseUiElements.SetActive(true);
         Time.timeScale = 0;
-        GameIsPaused = true;
+        gameIsPaused = true;
     }
 
     public void ShowSettings()
     {
-        Debug.Log("Button Pressed");
         settingsUiElements.SetActive(true);
+        
+        if (mainMenuUiElements.activeSelf)
+        {
+            mainMenuUiElements.SetActive(false);
+        }
 
-        if (!GameIsPaused) return;
+        if (!gameIsPaused) return;
         pauseUiElements.SetActive(false);
     }
 
     public void CloseSettings()
     {
         settingsUiElements.SetActive(false);
+        
+        if (!mainMenuUiElements.activeSelf && !gameIsPaused)
+        {
+            mainMenuUiElements.SetActive(true);
+        }
 
-        if (!GameIsPaused) return;
+        if (!gameIsPaused) return;
         pauseUiElements.SetActive(true);
     }
 
