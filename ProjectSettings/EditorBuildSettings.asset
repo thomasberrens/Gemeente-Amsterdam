@@ -5,7 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/ScoreSystemScene.unity
-    guid: 0b8285e5b9119134eab09d085a1ce2e2
+    path: Assets/Scenes/Menu/MainScene.unity
+    guid: b8b76bdf66e49e449bb8f40918355620
+  - enabled: 1
+    path: Assets/Scenes/Menu/SettingsScene.unity
+    guid: a94fd07fefb99134e88a9f05da17bfef
+  - enabled: 1
+    path: Assets/Scenes/Menu/CreditsScene.unity
+    guid: 147bf4735114313479611251af9b581b
+  - enabled: 1
+    path: Assets/Scenes/Scenarios/PiggyBacking/PiggyBackingCutScene.unity
+    guid: a376bda598cc75349afa00786a0d9625
+  - enabled: 1
+    path: Assets/Scenes/Scenarios/PiggyBacking/PiggyBackingInteractableScenario.unity
+    guid: 339c1446f4a93f74594fa66bc267029d
+  - enabled: 1
+    path: Assets/Scenes/Menu/EndScene.unity
+    guid: af22a94d112b6de40bc701fa13409907
   m_configObjects: {}
