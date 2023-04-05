@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PauseMenu : MonoBehaviour
+public class MenuHandler : MonoBehaviour
 {
     //IMPORTANT: This prefab needs to be part of a canvas!!!
     public static bool GameIsPaused = false;
     
     [SerializeField] private GameObject pauseUiElements;
+    [SerializeField] private GameObject settingsUiElements;
     private void Update()
     {
         if (!Input.GetKeyDown(KeyCode.Escape)) return;
@@ -28,5 +29,21 @@ public class PauseMenu : MonoBehaviour
         pauseUiElements.SetActive(true);
         Time.timeScale = 0;
         GameIsPaused = true;
+    }
+
+    public void ShowSettings()
+    {
+        settingsUiElements.SetActive(true);
+
+        if (!GameIsPaused) return;
+        pauseUiElements.SetActive(false);
+    }
+
+    public void CloseSettings()
+    {
+        settingsUiElements.SetActive(false);
+
+        if (!GameIsPaused) return;
+        pauseUiElements.SetActive(true);
     }
 }
