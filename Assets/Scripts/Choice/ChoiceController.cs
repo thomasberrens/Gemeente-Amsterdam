@@ -1,25 +1,34 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
-
-[ExecuteInEditMode]
 public class ChoiceController : MonoBehaviour
 {
-    [field: SerializeField] public VerticalLayoutGroup OptionGroup { get; private set; } 
-    [field: SerializeField] public Choice OptionPrefab { get; private set; }
-    [field: SerializeField] public List<Choice> Choices { get; private set; }
-    public void AddChoice(bool isCorrect, string text)
-    {
-        if (Choices == null) Choices = new List<Choice>();
-        
-        Choice option = Instantiate(OptionPrefab, OptionGroup.transform);
-        
-        option.IsCorrect = isCorrect;
-        option.Text = text;
+    [SerializeField] private HorizontalLayoutGroup choiceGroup;
+    [SerializeField] private GameObject choicePrefab;
+    [SerializeField] private UnityEvent<InteractableChoice> onChoiceSelected;
 
-        Choices.Add(option);
-        option.GetComponentInChildren<TMP_Text>().text = option.Text;
+    public void InitializeChoices(List<InteractableChoice> choices)
+    {
+        choices.ForEach(choice =>
+        {
+            GameObject choiceObject = Instantiate(choicePrefab, choiceGroup.transform);
+            choiceObject.GetComponentInChildren<TMP_Text>().text = choice.ChoiceText;
+
+            choiceObject.GetComponent<Button>().onClick.AddListener(() =>
+            {
+                onChoiceSelected?.Invoke(choice);
+            });
+        });
+    }
+
+    public void Disable()
+    {
+        foreach (Transform child in choiceGroup.transform)
+        {
+            Destroy(child.gameObject);
+        }
     }
 }

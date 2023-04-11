@@ -17,9 +17,12 @@ public class VideoManager : MonoBehaviour
     [field: SerializeField] public RawImage RawImage { get; set; } 
     [field: SerializeField] public List<Cutscene> Cutscenes { get; set; }                // List of cutscenes
     [field: SerializeField] public UnityEvent OnVideoEnd { get; private set; }
+    
+    [SerializeField] private VideoPlayer videoPlayer;
+    
     private bool cutscenePlaying = false;           // Flag to check if cutscene is currently playing  
 
-    private void PlayCutscene(int cutsceneIndex)
+    public void PlayCutscene(VideoClip videoClip)
     {
         if (cutscenePlaying)
             return;
@@ -28,13 +31,14 @@ public class VideoManager : MonoBehaviour
 
         // Play the video clip for the cutscene
         RenderTexture renderTexture = new RenderTexture(Screen.width, Screen.height, 24);
-        VideoPlayer videoPlayer = GetComponent<VideoPlayer>();
         videoPlayer.targetTexture = renderTexture;
-        videoPlayer.clip = Cutscenes[cutsceneIndex].VideoClip;
+        videoPlayer.clip = videoClip;
         RawImage.texture = renderTexture;
 
         // Enable the RawImage before playing the video
         RawImage.enabled = true;
+        
+        RawImage.gameObject.SetActive(true);
 
         videoPlayer.Play();
     }
@@ -45,6 +49,8 @@ public class VideoManager : MonoBehaviour
 
         // Disable the RawImage
         RawImage.enabled = false;
+        
+        RawImage.gameObject.SetActive(false);
 
         // Stop the video playback
         vp.Stop();
@@ -54,8 +60,8 @@ public class VideoManager : MonoBehaviour
 
     private void Awake()
     {
-        PlayCutscene(0);
+      //  PlayCutscene(0);
         // Add listener for when the video finishes playing
-        GetComponent<VideoPlayer>().loopPointReached += OnVideoFinished;
+        videoPlayer.loopPointReached += OnVideoFinished;
     }
 }

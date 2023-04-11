@@ -1,14 +1,16 @@
-﻿using UnityEditor;
+﻿using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.Video;
 
+[CreateAssetMenu(fileName = "New Interactable Scenario", menuName = "Interactable Scenario")]
 public class InteractableScenario : ScriptableObject {
         
-    public string Name { get; private set; }
-    public string TextToDisplay { get; private set; }
+    [field: SerializeField] public string Name { get; private set; }
+    [field: SerializeField] public string DialogueText { get; private set; }
+    [field: SerializeField] public string PrefabDirectory { get; private set; }
     
+    [field: SerializeField] public VideoClip CutScene { get; private set; }
     
-    
-    [MenuItem("Assets/Create/InteractableScenarios")]
-    public static void CreateAsset() => AssetDatabase.CreateAsset(ScriptableObject.CreateInstance<InteractableScenario>(), "Assets/InteractableScenarios/NewInteractableScenario.asset");
-    
+    [field: SerializeField] public List<InteractableChoice> Choices { get; private set; }
 }

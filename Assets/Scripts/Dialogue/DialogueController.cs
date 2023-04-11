@@ -9,35 +9,36 @@ using UnityEngine.UI;
 public class DialogueController : MonoBehaviour
 {
     [field: SerializeField] public TMP_Text DialogueTextField { get; private set; }
-    [field: SerializeField] public string[] DialogueInput { get; private set; }
+    [field: SerializeField] public GameObject DialoguePanel { get; private set; }
     [field: SerializeField] public float TypingSpeed { get; private set; } = 0.05f;
     [field: SerializeField] public float LineDelay { get; private set; } = 0.1f;
     [field: SerializeField] public UnityEvent OnDialogueStart { get; private set; }
     [field: SerializeField] public UnityEvent OnDialogueEnd { get; private set; }
 
+
     private int currentLine = 0;
     private bool isTyping = false;
 
-    private void Start()                            
-    {
-        StartDialogue();
-    }
-
-    public void StartDialogue()
+    public void StartDialogue(string dialogueText)
     {
         DialogueTextField.text = "";
-        StartCoroutine(ShowDialogue());
+        StartCoroutine(ShowDialogue(dialogueText));
     }
 
-    private IEnumerator ShowDialogue()
+    public void Disable()
+    {
+        DialogueTextField.text = "";
+        DialoguePanel.SetActive(false);
+    }
+
+    private IEnumerator ShowDialogue(string dialogueText)
     {
         OnDialogueStart?.Invoke();
-        while (currentLine < DialogueInput.Length)
-        {
-            yield return StartCoroutine(TypeText(DialogueInput[currentLine]));
-            currentLine++;
-            yield return new WaitForSeconds(LineDelay);
-        }
+        
+        DialoguePanel.SetActive(true);
+        DialogueTextField.gameObject.SetActive(true);
+
+        yield return TypeText(dialogueText);
 
         OnDialogueEnd?.Invoke();
     }
