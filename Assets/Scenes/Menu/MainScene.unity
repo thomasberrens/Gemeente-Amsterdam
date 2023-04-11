@@ -213,7 +213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4299583639297638875, guid: 6f73cff9cbc2822429550a981feac0cf, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4464584055569846377, guid: 6f73cff9cbc2822429550a981feac0cf, type: 3}
       propertyPath: m_LocalScale.x
@@ -290,6 +290,18 @@ PrefabInstance:
     - target: {fileID: 6666760551166491666, guid: 6f73cff9cbc2822429550a981feac0cf, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6788715533165891234, guid: 6f73cff9cbc2822429550a981feac0cf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 669506195}
+    - target: {fileID: 6788715533165891234, guid: 6f73cff9cbc2822429550a981feac0cf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SwitchScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 6788715533165891234, guid: 6f73cff9cbc2822429550a981feac0cf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: PhishingMailCutScene
       objectReference: {fileID: 0}
     - target: {fileID: 7659465633866345576, guid: 6f73cff9cbc2822429550a981feac0cf, type: 3}
       propertyPath: m_LocalScale.x
@@ -457,7 +469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9057407625519469850, guid: 6f73cff9cbc2822429550a981feac0cf, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9180387206924545095, guid: 6f73cff9cbc2822429550a981feac0cf, type: 3}
       propertyPath: m_IsActive
