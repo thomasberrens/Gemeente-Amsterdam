@@ -27,7 +27,8 @@ Bijv..
 
 Dean Hendriks:
 
-  * [Memory minigame](https://i.gyazo.com/981e1edfe57e9f1bb758d43b3b84c301.mp4)
+  ### Score Feature Sheet
+  ![Score Feature Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Score_Feature_Sheet.png?raw=true)
 
 Jason Dikken:
  ### User Interface Visual Sheet
