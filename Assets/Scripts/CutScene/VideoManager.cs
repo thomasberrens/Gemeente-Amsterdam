@@ -1,5 +1,4 @@
-using System;
-using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -21,6 +20,10 @@ public class VideoManager : MonoBehaviour
     
     private bool cutscenePlaying = false;           // Flag to check if cutscene is currently playing  
 
+    /// <summary>
+    /// Plays the provided cutscene video clip. If a cutscene is already playing, the method returns without playing the new clip.
+    /// </summary>
+    /// <param name="videoClip">The VideoClip to play for the cutscene.</param>
     public void PlayCutscene(VideoClip videoClip)
     {
         if (cutscenePlaying)
@@ -42,6 +45,10 @@ public class VideoManager : MonoBehaviour
         videoPlayer.Play();
     }
 
+    /// <summary>
+    /// Event handler for when the cutscene video finishes playing. Disables the RawImage, stops video playback, and invokes the OnVideoEnd event.
+    /// </summary>
+    /// <param name="vp">The VideoPlayer that finished playing the video.</param>
     private void OnVideoFinished(VideoPlayer vp)
     {
         cutscenePlaying = false;
@@ -57,9 +64,12 @@ public class VideoManager : MonoBehaviour
         OnVideoEnd?.Invoke();
     }
 
+    /// <summary>
+    /// Awake is called when the script instance is being loaded.
+    /// This method adds the OnVideoFinished event handler to the videoPlayer's loopPointReached event.
+    /// </summary>
     private void Awake()
     {
-      //  PlayCutscene(0);
         // Add listener for when the video finishes playing
         videoPlayer.loopPointReached += OnVideoFinished;
     }
