@@ -7,12 +7,13 @@ public class SettingsHandler : MonoBehaviour
     [SerializeField] private Toggle toggleButton;
     [SerializeField] private TMP_Dropdown resolutionDropdown;
     [SerializeField] private Slider soundSlider;
+    private string audioKey = "audioValue";
 
     private void Start()
     {
         Screen.SetResolution(1920, 1080, Screen.fullScreen);
         Screen.fullScreen = true;
-        soundSlider.value = PlayerPrefs.GetFloat("AudioValue", 1f);
+        soundSlider.value = PlayerPrefs.GetFloat(audioKey, 1f);
         toggleButton.onValueChanged.AddListener(OnToggleValueChanged);
         soundSlider.onValueChanged.AddListener(OnSliderValueChanged);
         resolutionDropdown.onValueChanged.AddListener(SetResolution);

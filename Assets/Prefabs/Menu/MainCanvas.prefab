@@ -1383,7 +1383,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 967159541}
-  - {fileID: 4464584055569846377}
+  - {fileID: 1717665595036282466}
   - {fileID: 7659465635556570419}
   - {fileID: 7659465634805255627}
   - {fileID: 7659465633866345576}
@@ -1515,6 +1515,7 @@ MonoBehaviour:
   pauseUiElements: {fileID: 7659465635338229796}
   settingsUiElements: {fileID: 4299583639297638875}
   mainMenuUiElements: {fileID: 9057407625519469850}
+  objectsToDisabled: []
 --- !u!1 &7659465635556570418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,7 +1649,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!1 &8835216889178631978
+--- !u!1 &9085059587021987430
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1656,9 +1657,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4464584055569846377}
-  - component: {fileID: 7967984838852248316}
-  - component: {fileID: 899496594028824665}
+  - component: {fileID: 1717665595036282466}
+  - component: {fileID: 5309235340177282772}
+  - component: {fileID: 3835628033163113636}
   m_Layer: 5
   m_Name: UI_pauze_scherm
   m_TagString: Untagged
@@ -1666,16 +1667,16 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &4464584055569846377
+--- !u!224 &1717665595036282466
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8835216889178631978}
+  m_GameObject: {fileID: 9085059587021987430}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 13.490588, y: 6.501488, z: 6.501488}
+  m_LocalScale: {x: 3.8448982, y: 4.516359, z: 6.501488}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7659465635338229797}
@@ -1683,24 +1684,24 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -42.9, y: 0}
+  m_AnchoredPosition: {x: -4, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &7967984838852248316
+--- !u!222 &5309235340177282772
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8835216889178631978}
+  m_GameObject: {fileID: 9085059587021987430}
   m_CullTransparentMesh: 1
---- !u!114 &899496594028824665
+--- !u!114 &3835628033163113636
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8835216889178631978}
+  m_GameObject: {fileID: 9085059587021987430}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -1714,7 +1715,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 25365fd9c2cb4cb4dbfdf25e2f9db47f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ab87d0fe365814f4992255175bd597ce, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2176,6 +2177,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 6c77df63ff94c7c4cbf3ae13e746a442, type: 3}
+    - target: {fileID: 8622210127121589110, guid: bae1ce7d5e5ea7444a8a5df9776fa547, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

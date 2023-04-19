@@ -9,13 +9,18 @@ public class MenuHandler : MonoBehaviour
     //IMPORTANT: This prefab needs to be part of a canvas!!!
     private bool gameIsPaused = false;
     private bool isInMainMenu = false;
-    
+
+    private AudioManager audioManager;
+
     [SerializeField] private GameObject pauseUiElements;
     [SerializeField] private GameObject settingsUiElements;
     [SerializeField] [CanBeNull] private GameObject mainMenuUiElements;
+    [SerializeField] private List<GameObject> objectsToDisabled;
+    
 
     private void Awake()
     {
+        audioManager = GameObject.Find("GameManager").GetComponent<AudioManager>();
         try { isInMainMenu = mainMenuUiElements.activeSelf; }
         catch (Exception e)
         {
@@ -34,14 +39,25 @@ public class MenuHandler : MonoBehaviour
     public void Resume()
     {
         pauseUiElements.SetActive(false);
+        foreach (var obj in objectsToDisabled)
+            obj.SetActive(true);
         Time.timeScale = 1;
+        audioManager.UnpauseAudio();
         gameIsPaused = false;
     }
 
     private void Pause()
     {
         pauseUiElements.SetActive(true);
+        foreach (var obj in objectsToDisabled)
+            obj.SetActive(false);
         Time.timeScale = 0;
+        if (!audioManager.isAudioPlaying())
+        {
+            AudioClip audioClip = Resources.Load<AudioClip>("Assets/Sounds/AnimalCrossing");
+            audioManager.PlayAudio(audioClip, false);
+        }
+        audioManager.PauseAudio();
         gameIsPaused = true;
     }
 
