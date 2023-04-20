@@ -1,6 +1,4 @@
-using System;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
@@ -15,7 +13,7 @@ public class AudioManager : MonoBehaviour
         DontDestroyOnLoad(this);
     }
 
-    void Start()
+    private void Start()
     {
         // Load the audio value from PlayerPrefs
         audioSource.volume = PlayerPrefs.GetFloat(audioKey, 1.0f);
