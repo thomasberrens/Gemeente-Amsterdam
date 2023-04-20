@@ -12,6 +12,10 @@ public class GameManager : MonoBehaviour
     {
         Instance ??= this;
     }
+    
+    /// <summary>
+    /// Quits the application.
+    /// </summary>
 
     public void QuitGame()
     {
