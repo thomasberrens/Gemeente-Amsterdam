@@ -11,6 +11,10 @@ public class MenuHandler : MonoBehaviour
     [SerializeField] private GameObject settingsUiElements;
     [SerializeField] private GameObject mainMenuUiElements;
 
+    /// <summary>
+    /// Awake is called when the script instance is being loaded.
+    /// This method checks if the user is in the main menu or not.
+    /// </summary>
     private void Awake()
     {
         try { isInMainMenu = mainMenuUiElements.activeSelf; }
@@ -20,6 +24,10 @@ public class MenuHandler : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Update is called once per frame. 
+    /// This method checks if the Escape key is pressed and toggles the game's pause state accordingly.
+    /// </summary>
     private void Update()
     {
         if (!Input.GetKeyDown(KeyCode.Escape) || isInMainMenu) return;
@@ -28,6 +36,9 @@ public class MenuHandler : MonoBehaviour
         else Pause();
     }
 
+    /// <summary>
+    /// Resumes the game by hiding the pause UI elements, enabling specified objects, and resuming time.
+    /// </summary>
     public void Resume()
     {
         pauseUiElements.SetActive(false);
@@ -36,6 +47,9 @@ public class MenuHandler : MonoBehaviour
         gameIsPaused = false;
     }
 
+    /// <summary>
+    /// Pauses the game by displaying the pause UI elements, disabling specified objects, and freezing time.
+    /// </summary>
     private void Pause()
     {
         pauseUiElements.SetActive(true);
@@ -44,6 +58,9 @@ public class MenuHandler : MonoBehaviour
         gameIsPaused = true;
     }
 
+    /// <summary>
+    /// Displays the settings UI elements and hides the main menu or pause UI elements if necessary.
+    /// </summary>
     public void ShowSettings()
     {
         settingsUiElements.SetActive(true);
@@ -57,6 +74,10 @@ public class MenuHandler : MonoBehaviour
         pauseUiElements.SetActive(false);
     }
 
+    
+    /// <summary>
+    /// Closes the settings UI elements and displays the main menu or pause UI elements if necessary.
+    /// </summary>
     public void CloseSettings()
     {
         settingsUiElements.SetActive(false);
@@ -70,6 +91,9 @@ public class MenuHandler : MonoBehaviour
         pauseUiElements.SetActive(true);
     }
 
+    /// <summary>
+    /// Quits the application.
+    /// </summary>
     public static void QuitGame()
     {
         Application.Quit();
