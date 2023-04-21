@@ -33,32 +33,11 @@ Dean Hendriks:
   ### Cut Scene Behaviour
   ![Cut Scene Behaviour](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Cut_Scene_Behaviour_Sheet.png?raw=true)
 
-Jason Dikken:
+## Jason Dikken:
  ### User Interface Visual Sheet
+ 
+ Hier laat ik de flow van het menu scherm zien met verschillende kleuren zodat je duidelijk kan zien wat elke knop precies doet.
   ![User Interface Visual Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_User_Interface_Flow.png?raw=true)
 
 Thomas Berrens:
   * [Hide and Seek](https://www.youtube.com/watch?v=gAXfkrqBIMo)
-
-
-## Memory minigame by Dean Hendriks
-
-A minigame that is comparable to a memory game.
-
-https://www.youtube.com/watch?v=gAXfkrqBIMo
-
-![Animation](https://www.youtube.com/watch?v=gAXfkrqBIMo)
-
-## Sound Guessing minigame by Jason Dikken
-
-A minigame where the player has to identify which sound is produced by a animal.
-
-![example](https://www.youtube.com/watch?v=L1ahuUrn9r8e)
-
-
-## Hide And Seek minigame by Thomas Berrens
-
-A minigame where the player has to find the animals in the environment.
-
-![example](https://www.youtube.com/watch?v=gAXfkrqBIMo)
-
