@@ -12,7 +12,6 @@ public class VideoManager : MonoBehaviour
     { 
         [field: SerializeField]public VideoClip VideoClip { get; set; }                // The video clip to play during the cutscene
     }
-
     [field: SerializeField] public RawImage RawImage { get; set; }
     [field: SerializeField] public UnityEvent OnVideoEnd { get; private set; }
     

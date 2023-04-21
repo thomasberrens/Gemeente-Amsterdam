@@ -1,7 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using JetBrains.Annotations;
 using UnityEngine;
 
 public class MenuHandler : MonoBehaviour
@@ -12,8 +9,7 @@ public class MenuHandler : MonoBehaviour
     
     [SerializeField] private GameObject pauseUiElements;
     [SerializeField] private GameObject settingsUiElements;
-    [SerializeField] [CanBeNull] private GameObject mainMenuUiElements;
-    [SerializeField] private List<GameObject> objectsToDisabled;
+    [SerializeField] private GameObject mainMenuUiElements;
 
     /// <summary>
     /// Awake is called when the script instance is being loaded.
@@ -46,9 +42,8 @@ public class MenuHandler : MonoBehaviour
     public void Resume()
     {
         pauseUiElements.SetActive(false);
-        foreach (var obj in objectsToDisabled)
-            obj.SetActive(true);
         Time.timeScale = 1;
+        AudioManager.Instance.UnpauseAudio();
         gameIsPaused = false;
     }
 
@@ -58,9 +53,8 @@ public class MenuHandler : MonoBehaviour
     private void Pause()
     {
         pauseUiElements.SetActive(true);
-        foreach (var obj in objectsToDisabled)
-            obj.SetActive(false);
         Time.timeScale = 0;
+        AudioManager.Instance.PauseAudio();
         gameIsPaused = true;
     }
 
