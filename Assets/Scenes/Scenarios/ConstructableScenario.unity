@@ -536,8 +536,8 @@ GameObject:
   - component: {fileID: 2009259489}
   - component: {fileID: 2009259487}
   - component: {fileID: 2009259490}
-  - component: {fileID: 2009259488}
   - component: {fileID: 2009259491}
+  - component: {fileID: 2009259488}
   m_Layer: 0
   m_Name: InteractableScenarioManager
   m_TagString: Untagged
