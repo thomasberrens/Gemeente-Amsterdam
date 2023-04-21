@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1665300736021910971}
   - component: {fileID: 1665300736021910970}
   m_Layer: 0
-  m_Name: UI_Computer_Scherm
+  m_Name: P_Computer_Scherm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

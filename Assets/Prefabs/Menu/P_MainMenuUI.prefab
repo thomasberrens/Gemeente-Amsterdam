@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4187207847673857976}
   m_Layer: 5
-  m_Name: MainMenu
+  m_Name: P_MainMenuUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4187207847673857976
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25,7 +25,7 @@ RectTransform:
   m_GameObject: {fileID: 727997999314190142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.207021, y: 2.207021, z: 2.207021}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8622210127121589065}
@@ -639,7 +639,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c83b329ff56634a469879aca450b4689, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6c77df63ff94c7c4cbf3ae13e746a442, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
