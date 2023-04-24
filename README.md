@@ -41,4 +41,6 @@ Dean Hendriks:
 
 ## Thomas Berrens:
  ### Interactable Scenario Visual Sheet
+
+ Hier laat ik zien hoe je een (interactable) scenario kan configureren.
   ![User Interface Visual Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Interactable_Scenario.png?raw=true)
