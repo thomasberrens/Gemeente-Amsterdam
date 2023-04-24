@@ -652,6 +652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactableScenario:
   - {fileID: 11400000, guid: b0352e85c56cfac42a2a853322a5597f, type: 2}
+  - {fileID: 11400000, guid: 8b6d7c4d7adeb494785c5d3423a6fc50, type: 2}
   videoManager: {fileID: 2009259487}
   dialogueController: {fileID: 2009259489}
   choiceController: {fileID: 2009259490}

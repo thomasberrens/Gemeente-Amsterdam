@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: KluisjesScenario
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Kluisjes
-  <DialogueText>k__BackingField: Iemand vroeg je wachtwoord
-  <PrefabDirectory>k__BackingField: 
-  <CutScene>k__BackingField: {fileID: 32900000, guid: 75815f5292fea3841b01c480cbd7efee, type: 3}
+  <DialogueText>k__BackingField: Iemand vroeg het wachtwoord van je kluisje, hoe
+    ga je hier mee om?
+  <PrefabDirectory>k__BackingField: KluisjesScenario
+  <CutScene>k__BackingField: {fileID: 32900000, guid: c3d6040f8cce58044a1ed130bbbbf6f9, type: 3}
   <Choices>k__BackingField:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 1c3091c9cff42444ba82e2f97b6364e7, type: 2}
+  - {fileID: 11400000, guid: 2599142766b4c2a4b92cfe471bf15b04, type: 2}
