@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class InteractableScenarioManager : MonoBehaviour {
         [SerializeField] private List<InteractableScenario> interactableScenario;
@@ -8,13 +9,14 @@ public class InteractableScenarioManager : MonoBehaviour {
         [SerializeField] private VideoManager videoManager;
         [SerializeField] private DialogueController dialogueController;
         [SerializeField] private ChoiceController choiceController;
+        [SerializeField] private UnityEvent onScenarioStart;
 
         private Queue<InteractableScenario> scenarioQueue;
 
         private InteractableScenario currentScenario;
 
         private List<GameObject> loadedObjects = new List<GameObject>();
-        
+
         /// <summary>
         /// Awake is called when the script instance is being loaded.
         /// This method initializes the scenario queue and starts the first scenario.
@@ -31,7 +33,7 @@ public class InteractableScenarioManager : MonoBehaviour {
         /// </summary>
         private void StartNextScenario()
         {
-
+            
             if (scenarioQueue.Count == 0)
             {
                 // end of game, switch user to end screen.
@@ -48,6 +50,7 @@ public class InteractableScenarioManager : MonoBehaviour {
         /// <param name="scenario">The InteractableScenario to start.</param>
         private void StartScenario(InteractableScenario scenario)
         {
+            onScenarioStart?.Invoke();
             ResetScene();
             currentScenario = scenario;
             videoManager.PlayCutscene(scenario.CutScene);
