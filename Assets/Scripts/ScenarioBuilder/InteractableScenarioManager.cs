@@ -9,6 +9,7 @@ public class InteractableScenarioManager : MonoBehaviour {
         [SerializeField] private VideoManager videoManager;
         [SerializeField] private DialogueController dialogueController;
         [SerializeField] private ChoiceController choiceController;
+        [SerializeField] private UnityEvent onScenarioStart;
 
         private Queue<InteractableScenario> scenarioQueue;
 
@@ -16,8 +17,6 @@ public class InteractableScenarioManager : MonoBehaviour {
 
         private List<GameObject> loadedObjects = new List<GameObject>();
 
-        public UnityEvent onScenarioStart;
-        
         /// <summary>
         /// Awake is called when the script instance is being loaded.
         /// This method initializes the scenario queue and starts the first scenario.
