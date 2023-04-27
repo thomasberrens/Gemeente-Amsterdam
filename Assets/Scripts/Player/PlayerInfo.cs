@@ -1,3 +1,4 @@
-﻿public class PlayerInfo {
-      public string Name { get; set; }  
+﻿public class PlayerInfo
+{
+      public string Name { get; set; } = "";
 }
