@@ -1015,7 +1015,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1280042764}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SetUserName
+        m_MethodName: SetUUID
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
 
@@ -26,6 +27,86 @@ public class JsonAdapter {
                 
                 sb.Append("}");
                 return sb.ToString();
+        }
+
+        public static JsonObject ToJsonObject(string json)
+        {
+                Dictionary<string, object> fields = Parse(json);
+                JsonObject jsonObject = new JsonObject
+                {
+                        Fields = fields
+                };
+
+                return jsonObject;
+        }
+        
+        private static Dictionary<string, object> Parse(string jsonString)
+        {
+                var result = new Dictionary<string, object>();
+                var entries = SplitJsonEntries(jsonString);
+
+                foreach (var entry in entries)
+                {
+                        var keyValuePair = SplitKeyValuePair(entry);
+                        result.Add(keyValuePair.Key, ParseJsonValue(keyValuePair.Value));
+                }
+
+                return result;
+        }
+
+        private static List<string> SplitJsonEntries(string jsonString)
+        {
+                jsonString = jsonString.Trim().TrimStart('{').TrimEnd('}');
+                var entries = new List<string>();
+                int braceCount = 0;
+                int start = 0;
+
+                for (int i = 0; i < jsonString.Length; i++)
+                {
+                        if (jsonString[i] == '{') braceCount++;
+                        if (jsonString[i] == '}') braceCount--;
+                        if (jsonString[i] == ',' && braceCount == 0)
+                        {
+                                entries.Add(jsonString.Substring(start, i - start));
+                                start = i + 1;
+                        }
+                }
+
+                entries.Add(jsonString.Substring(start));
+                return entries;
+        }
+
+        private static KeyValuePair<string, string> SplitKeyValuePair(string jsonEntry)
+        {
+                int colonIndex = jsonEntry.IndexOf(':');
+                string key = jsonEntry.Substring(0, colonIndex).Trim().Trim('"');
+                string value = jsonEntry.Substring(colonIndex + 1).Trim();
+                return new KeyValuePair<string, string>(key, value);
+        }
+
+        private static object ParseJsonValue(string value)
+        {
+                if (value.StartsWith('{'))
+                {
+                        return Parse(value);
+                }
+
+                if (int.TryParse(value, out int intValue))
+                {
+                        return intValue;
+                }
+
+                if (value.StartsWith('"') && value.EndsWith('"'))
+                {
+                        return value.Substring(1, value.Length - 2);
+                }
+
+                if (value == "null")
+                {
+                        return "null";
+                }
+
+                throw new ArgumentException($"Unsupported value type: {value}");
         }
         
         public static string Serialize(JsonObject obj) {

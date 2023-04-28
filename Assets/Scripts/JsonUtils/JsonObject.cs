@@ -6,7 +6,7 @@
     public class JsonObject
     {
         // dictionary of all the fields and values
-        public Dictionary<string, object> Fields { get; private set; } = new Dictionary<string, object>();
+        public Dictionary<string, object> Fields { get; set; } = new Dictionary<string, object>();
 
         // constructor
         public JsonObject(Object obj) {

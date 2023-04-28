@@ -129,7 +129,7 @@ public class InteractableScenarioManager : MonoBehaviour {
             JsonObject jsonObject = new JsonObject(choice);
             
             jsonObject.AddField("scenario", currentScenario.Name);
-            jsonObject.AddField("gameID", "fb1912e4-f4bf-401a-9436-46b7b0497d5a");
+            jsonObject.AddField("gameID", GameManager.Instance.PlayerInfo.GameID);
 
             string json = JsonAdapter.Serialize(jsonObject);
             
