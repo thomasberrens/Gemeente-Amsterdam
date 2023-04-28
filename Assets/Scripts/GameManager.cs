@@ -25,4 +25,5 @@ public class GameManager : MonoBehaviour
     {
         PlayerInfo.Name = userName;
     }
+    
 }

@@ -129,7 +129,7 @@ public class InteractableScenarioManager : MonoBehaviour {
             JsonObject jsonObject = new JsonObject(choice);
             
             jsonObject.AddField("scenario", currentScenario.Name);
-            jsonObject.AddField("username", GameManager.Instance.PlayerInfo.Name);
+            jsonObject.AddField("gameID", "fb1912e4-f4bf-401a-9436-46b7b0497d5a");
 
             string json = JsonAdapter.Serialize(jsonObject);
             
@@ -138,7 +138,7 @@ public class InteractableScenarioManager : MonoBehaviour {
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
             var client = new HttpClient();
-            client.PostAsync("http://localhost:8080/result/choice", content);
+            client.PostAsync("http://localhost:8080/gameinfo/add/choice", content);
             
         }
 
