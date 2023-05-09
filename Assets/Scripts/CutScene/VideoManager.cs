@@ -35,7 +35,7 @@ public class VideoManager : MonoBehaviour
         videoPlayer.targetTexture = renderTexture;
         // videoPlayer.clip = videoClip;
     //    videoPlayer.url = videoClip.originalPath;
-        videoPlayer.url = "https://localhost:8080/public/" + videoClip.name + ".mp4";
+        videoPlayer.url = "https://thomasberrens.github.io/Gemeente-Amsterdam/public/" + videoClip.name + ".mp4";
         RawImage.texture = renderTexture;
 
         // Enable the RawImage before playing the video
