@@ -1,9 +1,11 @@
 using System.Net.Http;
 using System.Text;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private List<GameObject> DontDestroyOnLoadObjects = new List<GameObject>();
     public static GameManager Instance {get; private set; }
     public PlayerInfo PlayerInfo { get; set; } = new PlayerInfo();
 
@@ -15,8 +17,11 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance ??= this;
-        
-        DontDestroyOnLoad(this);
+
+        for (int i = 0; i < DontDestroyOnLoadObjects.Count; i++)
+        {
+            DontDestroyOnLoad(DontDestroyOnLoadObjects[i]);
+        }
     }
     
     /// <summary>
