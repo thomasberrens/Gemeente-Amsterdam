@@ -27,33 +27,20 @@ Bijv..
 
 Dean Hendriks:
 
-  * [Memory minigame](https://i.gyazo.com/981e1edfe57e9f1bb758d43b3b84c301.mp4)
+  ### Score Feature Sheet
+  ![Score Feature Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Score_Feature_Sheet.png?raw=true)
 
-Jason Dikken:
-  * [Sound Guessing](https://www.youtube.com/watch?v=L1ahuUrn9r8e)
+  ### Cut Scene Behaviour
+  ![Cut Scene Behaviour](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Cut_Scene_Behaviour_Sheet.png?raw=true)
 
-Thomas Berrens:
-  * [Hide and Seek](https://www.youtube.com/watch?v=gAXfkrqBIMo)
+## Jason Dikken:
+ ### User Interface Visual Sheet
+ 
+ Hier laat ik de flow van het menu scherm zien met verschillende kleuren zodat je duidelijk kan zien wat elke knop precies doet.
+  ![User Interface Visual Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_User_Interface_Flow.png?raw=true)
 
+## Thomas Berrens:
+ ### Interactable Scenario Visual Sheet
 
-## Memory minigame by Dean Hendriks
-
-A minigame that is comparable to a memory game.
-
-https://www.youtube.com/watch?v=gAXfkrqBIMo
-
-![Animation](https://www.youtube.com/watch?v=gAXfkrqBIMo)
-
-## Sound Guessing minigame by Jason Dikken
-
-A minigame where the player has to identify which sound is produced by a animal.
-
-![example](https://www.youtube.com/watch?v=L1ahuUrn9r8e)
-
-
-## Hide And Seek minigame by Thomas Berrens
-
-A minigame where the player has to find the animals in the environment.
-
-![example](https://www.youtube.com/watch?v=gAXfkrqBIMo)
-
+ Hier laat ik zien hoe je een (interactable) scenario kan configureren.
+  ![User Interface Visual Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Interactable_Scenario.png?raw=true)
