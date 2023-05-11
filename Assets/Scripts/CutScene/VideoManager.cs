@@ -33,9 +33,7 @@ public class VideoManager : MonoBehaviour
         // Play the video clip for the cutscene
         RenderTexture renderTexture = new RenderTexture(Screen.width, Screen.height, 24);
         videoPlayer.targetTexture = renderTexture;
-        // videoPlayer.clip = videoClip;
-    //    videoPlayer.url = videoClip.originalPath;
-        videoPlayer.url = "https://thomasberrens.github.io/Gemeente-Amsterdam/public/" + videoClip.name + ".mp4";
+        videoPlayer.url = GameManager.Instance.FILES_URL + videoClip.name + ".mp4";
         RawImage.texture = renderTexture;
 
         // Enable the RawImage before playing the video
@@ -44,12 +42,6 @@ public class VideoManager : MonoBehaviour
         RawImage.gameObject.SetActive(true);
 
         videoPlayer.Play();
-    }
-    // TODO: remove this function
-    private void Update() {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            videoPlayer.time = videoPlayer.length;
-        }
     }
 
     /// <summary>
