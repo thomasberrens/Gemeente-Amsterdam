@@ -545,7 +545,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4038384309016262917, guid: aaec709bd87062641bfb14355c03f311, type: 3}
   m_PrefabInstance: {fileID: 4038384308431037334}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 4038384308431037335}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d49f9cf68d4a897459b2747dfdec839b, type: 3}
@@ -624,7 +624,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4038384309016262912, guid: aaec709bd87062641bfb14355c03f311, type: 3}
   m_PrefabInstance: {fileID: 4038384308431037334}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 4038384308431037335}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c645fbdf71f1ee41b6591b8e1bb5b39, type: 3}
@@ -872,19 +872,32 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4038384309016262915, guid: aaec709bd87062641bfb14355c03f311, type: 3}
+      propertyPath: DontDestroyOnLoadObjects.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038384309016262915, guid: aaec709bd87062641bfb14355c03f311, type: 3}
       propertyPath: DontDestroyOnLoadObjects.Array.data[0]
       value: 
       objectReference: {fileID: 1960705988}
+    - target: {fileID: 4038384309016262915, guid: aaec709bd87062641bfb14355c03f311, type: 3}
+      propertyPath: DontDestroyOnLoadObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 4038384308431037335}
     - target: {fileID: 4038384309016262916, guid: aaec709bd87062641bfb14355c03f311, type: 3}
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 4038384309016262916, guid: aaec709bd87062641bfb14355c03f311, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaec709bd87062641bfb14355c03f311, type: 3}
+--- !u!1 &4038384308431037335 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4038384309016262916, guid: aaec709bd87062641bfb14355c03f311, type: 3}
+  m_PrefabInstance: {fileID: 4038384308431037334}
+  m_PrefabAsset: {fileID: 0}
