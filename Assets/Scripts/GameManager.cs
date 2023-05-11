@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
 
     [field: SerializeField] public string API_URL = "http://localhost:8080/";
 
+    [field: SerializeField]
+    public string FILES_URL { get; private set; } = "https://thomasberrens.github.io/Gemeente-Amsterdam/public/";
+
     private void Awake()
     {
         Instance ??= this;
