@@ -32,6 +32,7 @@ public class VideoManager : MonoBehaviour
 
         // Play the video clip for the cutscene
         RenderTexture renderTexture = new RenderTexture(Screen.width, Screen.height, 24);
+
         videoPlayer.targetTexture = renderTexture;
         videoPlayer.url = GameManager.Instance.FILES_URL + videoClip.name + ".mp4";
         RawImage.texture = renderTexture;
@@ -43,7 +44,6 @@ public class VideoManager : MonoBehaviour
 
         videoPlayer.Play();
     }
-
     /// <summary>
     /// Event handler for when the cutscene video finishes playing. Disables the RawImage, stops video playback, and invokes the OnVideoEnd event.
     /// </summary>
