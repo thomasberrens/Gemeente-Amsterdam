@@ -2,6 +2,7 @@ using System.Net.Http;
 using System.Text;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
 public class GameManager : MonoBehaviour
 {
@@ -43,33 +44,36 @@ public class GameManager : MonoBehaviour
     public void RegisterGameInfo()
     {
         JsonObject jsonObject = new JsonObject();
-        
+
         jsonObject.AddField("playerID", PlayerInfo.UUID);
 
         string json = JsonAdapter.Serialize(jsonObject);
-            
+
         Debug.Log("JSON: " + json);
-            
-        var content = new StringContent(json, Encoding.UTF8, "application/json");
+        UnityWebRequest www = new UnityWebRequest(API_URL + "gameinfo/create", "POST");
+        byte[] bodyRaw = Encoding.UTF8.GetBytes(json);
+        www.uploadHandler = new UploadHandlerRaw(bodyRaw);
+        www.downloadHandler = new DownloadHandlerBuffer();
+        www.SetRequestHeader("Content-Type", "application/json");
 
-        var client = new HttpClient();
-        var response =  client.PostAsync(API_URL + "gameinfo/create", content).Result;
-
-        string responseContent = response.Content.ReadAsStringAsync().Result;
-
-        if (!response.IsSuccessStatusCode)
+        www.SendWebRequest().completed += operation =>
         {
-            Debug.Log("Couldn't verify ID.");
-            return;
-        }
-        
+            Debug.Log("Result: " + www.result);
 
-        JsonObject responseJson = JsonAdapter.ToJsonObject(responseContent);
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log("Couldn't verify ID.");
+            }
+            else
+            {
+                string responseContent = www.downloadHandler.text;
+                JsonObject responseJson = JsonAdapter.ToJsonObject(responseContent);
+                string gameID = responseJson.GetField("gameID").ToString();
+                PlayerInfo.GameID = gameID;
 
-        string gameID = responseJson.GetField("gameID").ToString();
-        
-        
-        PlayerInfo.GameID = gameID;
+                SceneController.SwitchScene("MainScene");
+            }
+        } ;
     }
-    
+
 }

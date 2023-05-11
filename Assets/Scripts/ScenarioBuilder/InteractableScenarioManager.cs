@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Networking;
 
 public class InteractableScenarioManager : MonoBehaviour {
         [SerializeField] private List<InteractableScenario> interactableScenario;
@@ -126,20 +128,20 @@ public class InteractableScenarioManager : MonoBehaviour {
         public void SendChoice(InteractableChoice choice)
         {
             JsonObject jsonObject = new JsonObject(choice);
-            
             jsonObject.AddField("scenario", currentScenario.Name);
             jsonObject.AddField("gameID", GameManager.Instance.PlayerInfo.GameID);
 
             string json = JsonAdapter.Serialize(jsonObject);
-            
             Debug.Log("JSON: " + json);
-            
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            var client = new HttpClient();
-            client.PostAsync(GameManager.Instance.API_URL + "gameinfo/add/choice", content);
-            
+            UnityWebRequest www = new UnityWebRequest(GameManager.Instance.API_URL + "gameinfo/add/choice", "POST");
+            byte[] bodyRaw = Encoding.UTF8.GetBytes(json);
+            www.uploadHandler = new UploadHandlerRaw(bodyRaw);
+            www.downloadHandler = new DownloadHandlerBuffer();
+            www.SetRequestHeader("Content-Type", "application/json");
+            www.SendWebRequest();
         }
+
 
         /// <summary>
         /// Stops the game and switches to the end scene.
