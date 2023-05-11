@@ -124,8 +124,6 @@ public class InteractableScenarioManager : MonoBehaviour {
         
         public void SendChoice(InteractableChoice choice)
         {
-        //    var jsonChoice = JsonAdapter.Serialize(choice);
-
             JsonObject jsonObject = new JsonObject(choice);
             
             jsonObject.AddField("scenario", currentScenario.Name);
@@ -138,7 +136,7 @@ public class InteractableScenarioManager : MonoBehaviour {
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
             var client = new HttpClient();
-            client.PostAsync("http://localhost:8080/gameinfo/add/choice", content);
+            client.PostAsync(GameManager.Instance.API_URL + "gameinfo/add/choice", content);
             
         }
 

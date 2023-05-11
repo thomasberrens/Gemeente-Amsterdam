@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using UnityEngine;
@@ -7,6 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance {get; private set; }
     public PlayerInfo PlayerInfo { get; set; } = new PlayerInfo();
+
+    [field: SerializeField] public string API_URL = "http://localhost:8080/";
 
     private void Awake()
     {
@@ -41,17 +42,21 @@ public class GameManager : MonoBehaviour
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
         var client = new HttpClient();
-        var response =  client.PostAsync("http://localhost:8080/gameinfo/create", content).Result;
+        var response =  client.PostAsync(API_URL + "gameinfo/create", content).Result;
 
         string responseContent = response.Content.ReadAsStringAsync().Result;
 
-        Debug.Log("Response content: " + responseContent);
+        if (!response.IsSuccessStatusCode)
+        {
+            Debug.Log("Couldn't verify ID.");
+            return;
+        }
+        
 
         JsonObject responseJson = JsonAdapter.ToJsonObject(responseContent);
 
         string gameID = responseJson.GetField("gameID").ToString();
         
-        Debug.Log("Game ID: " + gameID);
         
         PlayerInfo.GameID = gameID;
     }
