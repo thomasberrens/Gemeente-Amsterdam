@@ -33,6 +33,7 @@ public class DialogueController : MonoBehaviour
     {
         DialogueTextField.text = "";
         DialoguePanel.SetActive(false);
+        StopAllCoroutines();
     }
 
     /// <summary>

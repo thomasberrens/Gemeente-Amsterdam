@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Http;
+using System.Text;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -108,6 +110,8 @@ public class InteractableScenarioManager : MonoBehaviour {
             
             // we want to remove this instance later and just use a reference
             ScoreManager.Instance.AddScore(choice.Score);
+            
+            SendChoice(choice);
 
             if (hasFollowUp)
             {
@@ -116,6 +120,24 @@ public class InteractableScenarioManager : MonoBehaviour {
             }
 
             StartNextScenario();
+        }
+        
+        public void SendChoice(InteractableChoice choice)
+        {
+            JsonObject jsonObject = new JsonObject(choice);
+            
+            jsonObject.AddField("scenario", currentScenario.Name);
+            jsonObject.AddField("gameID", GameManager.Instance.PlayerInfo.GameID);
+
+            string json = JsonAdapter.Serialize(jsonObject);
+            
+            Debug.Log("JSON: " + json);
+            
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            var client = new HttpClient();
+            client.PostAsync(GameManager.Instance.API_URL + "gameinfo/add/choice", content);
+            
         }
 
         /// <summary>
