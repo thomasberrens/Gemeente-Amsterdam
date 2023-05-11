@@ -14,9 +14,6 @@ public class SettingsHandler : MonoBehaviour
     /// </summary>
     private void Start()
     {
-        Screen.SetResolution(1920, 1080, Screen.fullScreen);
-        Screen.fullScreen = true;
-        
         soundSlider.value = PlayerPrefs.GetFloat("AudioValue", 1f);
         toggleButton.onValueChanged.AddListener(OnToggleValueChanged);
         soundSlider.onValueChanged.AddListener(OnSliderValueChanged);

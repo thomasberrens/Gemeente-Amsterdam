@@ -11,12 +11,15 @@ public class GameManager : MonoBehaviour
 
     [field: SerializeField] public string API_URL = "http://localhost:8080/";
 
-    [field: SerializeField]
-    public string FILES_URL { get; private set; } = "https://thomasberrens.github.io/Gemeente-Amsterdam/public/";
+    [field: SerializeField] public string FILES_URL { get; private set; } = "https://thomasberrens.github.io/Gemeente-Amsterdam/public/";
 
     private void Awake()
     {
         Instance ??= this;
+        
+        // Set up the resolution and fullscreen mode for web build
+        Screen.SetResolution(1920, 1080, Screen.fullScreen);
+        Screen.fullScreen = true;
 
         for (int i = 0; i < DontDestroyOnLoadObjects.Count; i++)
         {
