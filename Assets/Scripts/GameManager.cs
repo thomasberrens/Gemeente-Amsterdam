@@ -1,22 +1,30 @@
 using System.Net.Http;
 using System.Text;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private List<GameObject> DontDestroyOnLoadObjects = new List<GameObject>();
     public static GameManager Instance {get; private set; }
     public PlayerInfo PlayerInfo { get; set; } = new PlayerInfo();
 
     [field: SerializeField] public string API_URL = "http://localhost:8080/";
 
-    [field: SerializeField]
-    public string FILES_URL { get; private set; } = "https://thomasberrens.github.io/Gemeente-Amsterdam/public/";
+    [field: SerializeField] public string FILES_URL { get; private set; } = "https://thomasberrens.github.io/Gemeente-Amsterdam/public/";
 
     private void Awake()
     {
         Instance ??= this;
         
-        DontDestroyOnLoad(this);
+        // Set up the resolution and fullscreen mode for web build
+        Screen.SetResolution(1920, 1080, Screen.fullScreen);
+        Screen.fullScreen = true;
+
+        for (int i = 0; i < DontDestroyOnLoadObjects.Count; i++)
+        {
+            DontDestroyOnLoad(DontDestroyOnLoadObjects[i]);
+        }
     }
     
     /// <summary>

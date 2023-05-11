@@ -55,6 +55,7 @@ public class InteractableScenarioManager : MonoBehaviour {
             onScenarioStart?.Invoke();
             ResetScene();
             currentScenario = scenario;
+            
             videoManager.PlayCutscene(scenario.CutScene);
         }
 
