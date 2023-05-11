@@ -43,12 +43,6 @@ public class VideoManager : MonoBehaviour
 
         videoPlayer.Play();
     }
-    // TODO: remove this function
-    private void Update() {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            videoPlayer.time = videoPlayer.length;
-        }
-    }
 
     /// <summary>
     /// Event handler for when the cutscene video finishes playing. Disables the RawImage, stops video playback, and invokes the OnVideoEnd event.
