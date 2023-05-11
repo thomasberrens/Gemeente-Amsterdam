@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scenarios/ConstructableScenario.unity
     guid: d69bb4a3958301141bbde1c5989d37d1
+  - enabled: 1
+    path: Assets/Scenes/LoginScene.unity
+    guid: 3ea1cdf2225343c4ea2c6f0d833b5296
   m_configObjects: {}
