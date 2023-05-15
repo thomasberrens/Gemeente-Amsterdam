@@ -27,11 +27,14 @@ Bijv..
 
 Dean Hendriks:
 
-  ### Score Feature Sheet
+  ### Score Visual Sheet
   ![Score Feature Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Score_Feature_Sheet.png?raw=true)
 
-  ### Cut Scene Behaviour
+  ### Cut Scene Visual Sheet
   ![Cut Scene Behaviour](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Cut_Scene_Behaviour_Sheet.png?raw=true)
+  
+  ### Transition Manager Visual Sheet
+  
 
 ## Jason Dikken:
  ### User Interface Visual Sheet
