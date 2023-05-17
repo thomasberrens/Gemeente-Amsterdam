@@ -29,13 +29,15 @@ Door middel van tekst en kleuren leggen we uit wat voor systemen we hebben gemaa
 ## Dean Hendriks:
 
   ### Score Visual Sheet
-  // uitleg over feature 
+  // uitleg over feature
+  
   De code die bij deze feature vind kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/tree/master/Assets/Scripts/ScoreSystem) vinden.
   
   ![Score Feature Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Score_Feature_Sheet.png?raw=true)
   
   ### Cut Scene Visual Sheet
   // uitleg over feature
+  
   De code die bij deze feature vind kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/tree/master/Assets/Scripts/CutScene) vinden.
   
   ![Cut Scene Behaviour](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Cut_Scene_Behaviour_Sheet.png?raw=true)
@@ -49,6 +51,10 @@ Door middel van tekst en kleuren leggen we uit wat voor systemen we hebben gemaa
  ### User Interface Visual Sheet
  
  Hier laat ik de flow van het menu scherm zien met verschillende kleuren zodat je duidelijk kan zien wat elke knop precies doet.
+ 
+ De code van de scene switcher kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Assets/Scripts/SceneSwitcher.cs) vinden.
+ De User Interface art kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/tree/master/Assets/Art/UI) terugvinden.
+ 
   ![User Interface Visual Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_User_Interface_Flow.png?raw=true)
 
   ### Audio Manager Visual Sheet
