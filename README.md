@@ -2,23 +2,23 @@
 In deze repository vind je veel informatie over ons examenopdracht voor gemeente Amsterdam. Ook vind je hier een aantal gevisualiseerde geproduceerde game onderdelen. 
 Onze planning en wiki zijn te vinden hieronder bij belangrijke links.
 
----
-
 ## Belangrijke links:
 Er is ook veel informatie te vinden in onze [wiki](https://github.com/thomasberrens/Gemeente-Amsterdam/wiki).
 Onze planning is te vinden op onze [Trello](https://trello.com/b/I5btxegt/gemeente-amsterdam).
 
----
+We hebben ook nog 2 andere Github gebruikt voor onze website die gekoppeld is aan de game.
+- Hier hebben we een Github link voor de website: [Gemeente Amsterdam Website](https://github.com/thomasberrens/Gemeente-Amsterdam-Website).
+- Ook hebben we een seperate API github gemaakt voor de communicatie van web naar onze game: [Gemeente Amsterdam API](https://github.com/thomasberrens/Gemeente-Amsterdam-API).
 
-## De opdracht:
+# De opdracht:
 In het algemeen zal het spel een simulatie zijn van een dag werken bij de gemeente Amsterdam, waarbij de speler interacties en keuzes moet maken die zijn score beïnvloeden. Het spel begint met een startscherm waar de speler het spel kan starten, zodra het spel begint krijg je een korte introductie, je wilt als speler naar je kantoor om je dag te beginnen en te werken totdat je klaar bent met de werkdag. voordat je bij je kantoor bent krijg je al interacties wat bestaat uit valse e-mails, social engineering, valse telefoontjes, oplichters, etc, de interacties krijg je inderdaad ook tijdens de werkdag achter je kantoor.
 Een complete en uitgebreide beschrijving is in het functioneel ontwerp (onderdeel van de [wiki](https://github.com/thomasberrens/Gemeente-Amsterdam/wiki/Functioneel-Ontwerp)).
 
 ---
 
-## Geproduceerde Game Onderdelen
+# Geproduceerde Game Onderdelen
 
-# Visual sheets:
+## Visual sheets:
 Individueel- Hiervoor is het nodig om visuele sheets te laten zien van de technische/functioneel onderwerp en/of uitwerking aan de klant en zowel in onze documentatie op GitHub. 
 Een Functioneel ontwerp en een technische ontwerp helpt het voor de klant om het beter te snappen en voor ons om het duidelijk te begrijpen waarmee wij bezig zijn.
 
