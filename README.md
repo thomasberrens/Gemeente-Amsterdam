@@ -21,22 +21,23 @@ Een complete en uitgebreide beschrijving is in het functioneel ontwerp (onderdee
 # Geproduceerde Game Onderdelen
 
 ## Visual sheets:
-Individueel- Hiervoor is het nodig om visuele sheets te laten zien van de technische/functioneel onderwerp en/of uitwerking aan de klant en zowel in onze documentatie op GitHub. 
-Een Functioneel ontwerp en een technische ontwerp helpt het voor de klant om het beter te snappen en voor ons om het duidelijk te begrijpen waarmee wij bezig zijn.
-
-Geef per teammember aan welke game onderdelen je hebt geproduceerd. Doe dit met behulp van omschrijvingen visual sheets en screenshots.
-Maak ook een overzicht van alle onderdelen met een link naar de map waarin deze terug te vinden zijn.
-
-  * !!!!!!!! hier moet een kleine gif komen (niet via link), een een link naar de files die deze feature realiseren
+Hier laten wij wat van ons werk wat visueler zien dan code. Dit helpt om duidelijk onze code uit te leggen naar opdrachtgevers, beoordelaars en derde partijen.
+Door middel van tekst en kleuren leggen we uit wat voor systemen we hebben gemaakt.
 
 ---
 
 ## Dean Hendriks:
 
   ### Score Visual Sheet
+  // uitleg over feature 
+  De code die bij deze feature vind kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/tree/master/Assets/Scripts/ScoreSystem) vinden.
+  
   ![Score Feature Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Score_Feature_Sheet.png?raw=true)
   
   ### Cut Scene Visual Sheet
+  // uitleg over feature
+  De code die bij deze feature vind kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/tree/master/Assets/Scripts/CutScene) vinden.
+  
   ![Cut Scene Behaviour](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Cut_Scene_Behaviour_Sheet.png?raw=true)
   
   ### Transition Manager Visual Sheet
