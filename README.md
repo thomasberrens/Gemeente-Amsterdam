@@ -53,6 +53,7 @@ Door middel van tekst en kleuren leggen we uit wat voor systemen we hebben gemaa
  Hier laat ik de flow van het menu scherm zien met verschillende kleuren zodat je duidelijk kan zien wat elke knop precies doet.
  
  De code van de scene switcher kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Assets/Scripts/SceneSwitcher.cs) vinden.
+ 
  De User Interface art kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/tree/master/Assets/Art/UI) terugvinden.
  
   ![User Interface Visual Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_User_Interface_Flow.png?raw=true)
