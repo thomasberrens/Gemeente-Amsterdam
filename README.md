@@ -9,6 +9,7 @@ Onze planning is te vinden op onze [Trello](https://trello.com/b/I5btxegt/gemeen
 We hebben ook nog 2 andere Github gebruikt voor onze website die gekoppeld is aan de game.
 - Hier hebben we een Github link voor de website: [Gemeente Amsterdam Website](https://github.com/thomasberrens/Gemeente-Amsterdam-Website).
 - Ook hebben we een seperate API github gemaakt voor de communicatie van web naar onze game: [Gemeente Amsterdam API](https://github.com/thomasberrens/Gemeente-Amsterdam-API).
+We hebben besloten om deze compleet los in een andere repositories gemaakt omdat andere codetalen en andere git conventies zijn dan het Unity project zelf. Deze andere gitconventies kan je teruglezen in de github conventies op de wiki. 
 
 # De opdracht:
 In het algemeen zal het spel een simulatie zijn van een dag werken bij de gemeente Amsterdam, waarbij de speler interacties en keuzes moet maken die zijn score beïnvloeden. Het spel begint met een startscherm waar de speler het spel kan starten, zodra het spel begint krijg je een korte introductie, je wilt als speler naar je kantoor om je dag te beginnen en te werken totdat je klaar bent met de werkdag. voordat je bij je kantoor bent krijg je al interacties wat bestaat uit valse e-mails, social engineering, valse telefoontjes, oplichters, etc, de interacties krijg je inderdaad ook tijdens de werkdag achter je kantoor.
