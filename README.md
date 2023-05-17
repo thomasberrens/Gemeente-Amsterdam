@@ -62,6 +62,9 @@ Door middel van tekst en kleuren leggen we uit wat voor systemen we hebben gemaa
  
  Dit legt uit hoe mijn audio script werkt met de unity audio listener en audio sources. In mijn script zoek ik de audio source op en dan zet ik de audio clip erin.
  Deze functies roep ik aan via een Unity event op een button.
+ 
+ De code die bij deze feature vind kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/develop/Assets/Scripts/Audio/AudioManager.cs) vinden.
+ 
   ![User Interface Visual Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Audio_Manager_Sheet.png?raw=true)
 
 ---
@@ -70,4 +73,11 @@ Door middel van tekst en kleuren leggen we uit wat voor systemen we hebben gemaa
 
  ### Interactable Scenario Visual Sheet
  Hier laat ik zien hoe je een (interactable) scenario kan configureren.
+ 
+ De code van de intertactable scneario manager kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/develop/Assets/Scripts/ScenarioBuilder/InteractableScenarioManager.cs) vinden.
+ 
+ De manager heeft ook ondersteunende scripts, die kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/tree/develop/Assets/Scripts/ScenarioBuilder) vinden.
+ 
+ De scenarios kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/tree/develop/Assets/InteractableScenarios) vinden.
+ 
   ![User Interface Visual Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Interactable_Scenario.png?raw=true)
