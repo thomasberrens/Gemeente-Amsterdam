@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1032734b99ca4253904194bb83cff7bc, type: 3}
-  m_Name: Contant
+  m_Name: Begrepen
   m_EditorClassIdentifier: 
-  <ChoiceText>k__BackingField: Betaal contant
-  <Score>k__BackingField: 10
-  <PossibleFollowUpScenario>k__BackingField: {fileID: 11400000, guid: b64b482f5cda347448132ec0ce3f7752, type: 2}
+  <ChoiceText>k__BackingField: Begrepen!
+  <Score>k__BackingField: 0
+  <Explanation>k__BackingField: 
+  <PossibleFollowUpScenario>k__BackingField: {fileID: 0}

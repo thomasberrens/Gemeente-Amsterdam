@@ -57,8 +57,17 @@ public class InteractableScenarioManager : MonoBehaviour {
             onScenarioStart?.Invoke();
             ResetScene();
             currentScenario = scenario;
+
+            if (scenario.CutScene != null)
+            {
+                videoManager.PlayCutscene(scenario.CutScene);
+            }
+            else
+            {
+                StartDialogue();
+            }
             
-            videoManager.PlayCutscene(scenario.CutScene);
+
         }
 
         /// <summary>
@@ -113,8 +122,9 @@ public class InteractableScenarioManager : MonoBehaviour {
             
             // we want to remove this instance later and just use a reference
             ScoreManager.Instance.AddScore(choice.Score);
-            
-            SendChoice(choice);
+
+            if (choice.Score != 0) SendChoice(choice);
+
 
             if (hasFollowUp)
             {
