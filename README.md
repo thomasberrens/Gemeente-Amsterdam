@@ -41,6 +41,12 @@ Dean Hendriks:
  
  Hier laat ik de flow van het menu scherm zien met verschillende kleuren zodat je duidelijk kan zien wat elke knop precies doet.
   ![User Interface Visual Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_User_Interface_Flow.png?raw=true)
+  
+  ### Audio Manager Visual Sheet
+ 
+ Dit legt uit hoe mijn audio script werkt met de unity audio listener en audio sources. In mijn script zoek ik de audio source op en dan zet ik de audio clip erin.
+ Deze functies roep ik aan via een Unity event op een button.
+  ![User Interface Visual Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Audio_Manager_Sheet.png?raw=true)
 
 ## Thomas Berrens:
  ### Interactable Scenario Visual Sheet
