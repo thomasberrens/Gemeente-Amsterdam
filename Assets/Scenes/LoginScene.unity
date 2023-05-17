@@ -208,7 +208,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46.55
+  m_fontSize: 48
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -484,6 +484,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4038384309016262915, guid: aaec709bd87062641bfb14355c03f311, type: 3}
+      propertyPath: API_URL
+      value: https://gemeente-amsterdam-api-spring-api.azuremicroservices.io/
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038384309016262915, guid: aaec709bd87062641bfb14355c03f311, type: 3}
+      propertyPath: DontDestroyOnLoadObjects.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038384309016262915, guid: aaec709bd87062641bfb14355c03f311, type: 3}
+      propertyPath: DontDestroyOnLoadObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 1280042766}
+    - target: {fileID: 4038384309016262915, guid: aaec709bd87062641bfb14355c03f311, type: 3}
+      propertyPath: DontDestroyOnLoadObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 940378873}
     - target: {fileID: 4038384309016262916, guid: aaec709bd87062641bfb14355c03f311, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -498,23 +514,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4038384309016262915, guid: aaec709bd87062641bfb14355c03f311, type: 3}
   m_PrefabInstance: {fileID: 1280042763}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1280042766}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b316b7701df5d1499725388f3c288bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1280042765 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4038384309016262917, guid: aaec709bd87062641bfb14355c03f311, type: 3}
+--- !u!1 &1280042766 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4038384309016262916, guid: aaec709bd87062641bfb14355c03f311, type: 3}
   m_PrefabInstance: {fileID: 1280042763}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d49f9cf68d4a897459b2747dfdec839b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1435035554
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,18 +689,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1280042765}
-        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
-        m_MethodName: SwitchScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: MainScene
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1280042764}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: RegisterGameInfo
