@@ -8,7 +8,7 @@ using UnityEngine.Events;
 using UnityEngine.Networking;
 
 public class InteractableScenarioManager : MonoBehaviour {
-        [SerializeField] private List<InteractableScenario> interactableScenario;
+        [field: SerializeField] public List<InteractableScenario> InteractableScenarios { get; private set; }
         
         [SerializeField] private VideoManager videoManager;
         [SerializeField] private DialogueController dialogueController;
@@ -28,7 +28,7 @@ public class InteractableScenarioManager : MonoBehaviour {
         private void Awake()
         {
             // add every element of interactableScenario to the queue
-            scenarioQueue = new Queue<InteractableScenario>(interactableScenario);
+            scenarioQueue = new Queue<InteractableScenario>(InteractableScenarios);
             StartNextScenario();
         }
 
