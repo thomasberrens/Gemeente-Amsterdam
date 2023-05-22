@@ -43,7 +43,7 @@ Door middel van tekst en kleuren leggen we uit wat voor systemen we hebben gemaa
   ![Cut Scene Feature Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Cut_Scene_Behaviour_Sheet.png?raw=true)
   
   ### Transition Manager Visual Sheet
-  ![Transition Feature Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Cut_Scene_Behaviour_Sheet.png?raw=true)
+  ![Transition Feature Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Transition_ManagerFeature_Sheet.png)
   
   ---
   
