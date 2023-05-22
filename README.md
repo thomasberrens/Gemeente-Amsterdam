@@ -40,10 +40,10 @@ Door middel van tekst en kleuren leggen we uit wat voor systemen we hebben gemaa
   
   De code die bij deze feature vind kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/tree/master/Assets/Scripts/CutScene) vinden.
   
-  ![Cut Scene Behaviour](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Cut_Scene_Behaviour_Sheet.png?raw=true)
+  ![Cut Scene Feature Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Cut_Scene_Behaviour_Sheet.png?raw=true)
   
   ### Transition Manager Visual Sheet
-  ![Cut Scene Behaviour](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Cut_Scene_Behaviour_Sheet.png?raw=true)
+  ![Transition Feature Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Cut_Scene_Behaviour_Sheet.png?raw=true)
   
   ---
   
