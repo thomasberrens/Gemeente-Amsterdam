@@ -29,20 +29,27 @@ Door middel van tekst en kleuren leggen we uit wat voor systemen we hebben gemaa
 ## Dean Hendriks:
 
   ### Score Visual Sheet
-  // uitleg over feature
   
-  De code die bij deze feature vind kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/tree/master/Assets/Scripts/ScoreSystem) vinden.
+  Hier laat ik de flow van hoe de score system werkt aan de hand van kleuren en een korte uitleg van de code in de feature sheet.
+  
+  De code die bij deze feature hoort kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/tree/master/Assets/Scripts/ScoreSystem) vinden.
   
   ![Score Feature Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Score_Feature_Sheet.png?raw=true)
   
   ### Cut Scene Visual Sheet
-  // uitleg over feature
   
-  De code die bij deze feature vind kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/tree/master/Assets/Scripts/CutScene) vinden.
+  Hier laat ik de flow van de Cut Scene behaviour zien aan de hand van kleuren en een korte uitleg van de code in de feature sheet.
+  
+  De code die bij deze feature hoort kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/tree/master/Assets/Scripts/CutScene) vinden.
   
   ![Cut Scene Feature Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Cut_Scene_Behaviour_Sheet.png?raw=true)
   
   ### Transition Manager Visual Sheet
+  
+  hier laat ik de flow van de Transition Manager zien aan de hand van kleuren en een korte uitleg van de code in de feature sheet.
+  
+  De code die bij deze feature hoort kan je [hier]() vinden.
+  
   ![Transition Feature Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Transition_ManagerFeature_Sheet.png)
   
   ---
@@ -64,7 +71,7 @@ Door middel van tekst en kleuren leggen we uit wat voor systemen we hebben gemaa
  Dit legt uit hoe mijn audio script werkt met de unity audio listener en audio sources. In mijn script zoek ik de audio source op en dan zet ik de audio clip erin.
  Deze functies roep ik aan via een Unity event op een button.
  
- De code die bij deze feature vind kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/develop/Assets/Scripts/Audio/AudioManager.cs) vinden.
+ De code die bij deze feature hoort kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/develop/Assets/Scripts/Audio/AudioManager.cs) vinden.
  
   ![User Interface Visual Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Audio_Manager_Sheet.png?raw=true)
 
