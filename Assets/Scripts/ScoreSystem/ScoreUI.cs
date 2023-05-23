@@ -3,10 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreUI : MonoBehaviour
 {
     [SerializeField] private TMP_Text scoreText;
+
+    [SerializeField] private Sprite happySmiley;
+    [SerializeField] private Sprite sadSmiley;
+    [SerializeField] private Sprite neutralSmiley;
+    
+    [SerializeField] private Image smileyPlaceholder;
 
     /// <summary>
     /// Awake is called when the script instance is being loaded.
@@ -15,6 +22,17 @@ public class ScoreUI : MonoBehaviour
     private void Awake()
     {
         ScoreManager scoreManager = ScoreManager.Instance;
-        scoreText.text = scoreManager.CurrentScore + "/" + scoreManager.MaxScore;
+        
+        double relativeScore = scoreManager.CalculateCurrentRelativeScore();
+
+        smileyPlaceholder.sprite = relativeScore switch
+        {
+            >= 5 and < 7 => neutralSmiley,
+            >= 7 => happySmiley,
+            < 5 => sadSmiley,
+            _ => smileyPlaceholder.sprite
+        };
+
+        scoreText.text = scoreManager.CalculateCurrentRelativeScore() + " / 10";
     }
 }

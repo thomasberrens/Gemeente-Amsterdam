@@ -7,7 +7,6 @@
     {
         [field: SerializeField] [JsonField("choice")] public string ChoiceText { get; private set; }
         [field: SerializeField] [JsonField("score")] public int Score { get; private set; }
-        [field: SerializeField] public string Explanation { get; private set; }
 
         // This is a possible follow up scenario (it can be null!)
         [field: SerializeField] public InteractableScenario PossibleFollowUpScenario { get; private set; }

@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ChoiceText>k__BackingField: Geef code
   <Score>k__BackingField: -10
+  <Explanation>k__BackingField: Geef nooit zomaar codes aan je collega's ook als
+    je ze goed kent, ze kunnen hier nu misbruik van maken.
   <PossibleFollowUpScenario>k__BackingField: {fileID: 11400000, guid: a65dca685845932479a734393a7b4f9e, type: 2}

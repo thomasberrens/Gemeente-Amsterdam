@@ -8,7 +8,7 @@ using UnityEngine.Events;
 using UnityEngine.Networking;
 
 public class InteractableScenarioManager : MonoBehaviour {
-        [SerializeField] private List<InteractableScenario> interactableScenario;
+        [field: SerializeField] public List<InteractableScenario> InteractableScenarios { get; private set; }
         
         [SerializeField] private VideoManager videoManager;
         [SerializeField] private DialogueController dialogueController;
@@ -28,7 +28,7 @@ public class InteractableScenarioManager : MonoBehaviour {
         private void Awake()
         {
             // add every element of interactableScenario to the queue
-            scenarioQueue = new Queue<InteractableScenario>(interactableScenario);
+            scenarioQueue = new Queue<InteractableScenario>(InteractableScenarios);
             StartNextScenario();
         }
 
@@ -57,8 +57,17 @@ public class InteractableScenarioManager : MonoBehaviour {
             onScenarioStart?.Invoke();
             ResetScene();
             currentScenario = scenario;
+
+            if (scenario.CutScene != null)
+            {
+                videoManager.PlayCutscene(scenario.CutScene);
+            }
+            else
+            {
+                StartDialogue();
+            }
             
-            videoManager.PlayCutscene(scenario.CutScene);
+
         }
 
         /// <summary>
@@ -113,8 +122,9 @@ public class InteractableScenarioManager : MonoBehaviour {
             
             // we want to remove this instance later and just use a reference
             ScoreManager.Instance.AddScore(choice.Score);
-            
-            SendChoice(choice);
+
+            if (choice.Score != 0) SendChoice(choice);
+
 
             if (hasFollowUp)
             {
