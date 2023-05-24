@@ -5,7 +5,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager Instance {get; private set; }
     private AudioSource audioSource;
     private GameObject camera;
-    private string audioKey = "audioValue";
+    private string audioKey = "AudioValue";
     private string cameraTag = "MainCamera";
     private float audioValue = 1.0f;
 

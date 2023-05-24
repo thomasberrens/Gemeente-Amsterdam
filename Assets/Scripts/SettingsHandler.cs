@@ -8,13 +8,15 @@ public class SettingsHandler : MonoBehaviour
     [SerializeField] private TMP_Dropdown resolutionDropdown;
     [SerializeField] private Slider soundSlider;
     
+    private string audioKey = "AudioValue";
+    
     /// <summary>
     /// Start is called on the frame when a script is enabled just before any of the Update methods are called the first time.
     /// This method sets up the initial screen resolution, full-screen mode, sound slider value, and event listeners for UI elements.
     /// </summary>
     private void Start()
     {
-        soundSlider.value = PlayerPrefs.GetFloat("AudioValue", 1f);
+        soundSlider.value = PlayerPrefs.GetFloat(audioKey, 1f);
         toggleButton.onValueChanged.AddListener(OnToggleValueChanged);
         soundSlider.onValueChanged.AddListener(OnSliderValueChanged);
         resolutionDropdown.onValueChanged.AddListener(SetResolution);
@@ -48,6 +50,6 @@ public class SettingsHandler : MonoBehaviour
     /// <param name="value">The value of the audio slider.</param>
     private void OnSliderValueChanged(float value)
     {
-        PlayerPrefs.SetFloat("AudioValue", value);
+        PlayerPrefs.SetFloat(audioKey, value);
     }
 }
