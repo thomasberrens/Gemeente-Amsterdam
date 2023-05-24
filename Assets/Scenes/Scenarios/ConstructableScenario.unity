@@ -151,18 +151,18 @@ RectTransform:
   m_GameObject: {fileID: 92221549}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5744, y: 1.5744, z: 1.5744}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1446451568}
   m_Father: {fileID: 1909153914}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 833, y: -133}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 31, y: -42}
   m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &92221551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -977,10 +977,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2009259485}
   - component: {fileID: 2009259486}
+  - component: {fileID: 2009259491}
   - component: {fileID: 2009259489}
   - component: {fileID: 2009259487}
   - component: {fileID: 2009259490}
-  - component: {fileID: 2009259491}
   - component: {fileID: 2009259488}
   - component: {fileID: 2009259492}
   m_Layer: 0
@@ -1017,7 +1017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5b9af4c8af646b5b0183fc0a92fa1d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactableScenario:
+  <InteractableScenarios>k__BackingField:
   - {fileID: 11400000, guid: 8b6d7c4d7adeb494785c5d3423a6fc50, type: 2}
   - {fileID: 11400000, guid: b0352e85c56cfac42a2a853322a5597f, type: 2}
   - {fileID: 11400000, guid: b562cc1a521a8604bb5b96512ef294b9, type: 2}
@@ -1180,7 +1180,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c146f60f8e6a241acc4691f80be203, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <MaxScore>k__BackingField: 10
+  <MaxScore>k__BackingField: 0
+  interactableScenarioManager: {fileID: 2009259486}
 --- !u!114 &2009259492
 MonoBehaviour:
   m_ObjectHideFlags: 0

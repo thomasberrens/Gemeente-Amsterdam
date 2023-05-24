@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ChoiceText>k__BackingField: Pak zelf
   <Score>k__BackingField: 10
-  <PossibleFollowUpScenario>k__BackingField: {fileID: 0}
+  <PossibleFollowUpScenario>k__BackingField: {fileID: 11400000, guid: 684bb9239909b0744a4a3e7741f606d9, type: 2}

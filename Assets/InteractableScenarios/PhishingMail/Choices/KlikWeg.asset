@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ChoiceText>k__BackingField: Klik de mail weg.
   <Score>k__BackingField: 5
-  <PossibleFollowUpScenario>k__BackingField: {fileID: 0}
+  <PossibleFollowUpScenario>k__BackingField: {fileID: 11400000, guid: 40a8d1fe8bab4b044a8c6b9c4e793c59, type: 2}

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ChoiceText>k__BackingField: Betaal contant
   <Score>k__BackingField: 10
-  <PossibleFollowUpScenario>k__BackingField: {fileID: 0}
+  <PossibleFollowUpScenario>k__BackingField: {fileID: 11400000, guid: b64b482f5cda347448132ec0ce3f7752, type: 2}

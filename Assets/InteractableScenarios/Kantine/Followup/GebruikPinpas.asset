@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: GebruikPinpas
   m_EditorClassIdentifier: 
   <Name>k__BackingField: GebruikPinpas
-  <DialogueText>k__BackingField: 
-  <PrefabDirectory>k__BackingField: 
+  <DialogueText>k__BackingField: Je heb geen officiele melding gekregen dat het pin
+    automaat niet werkt, dit is een truc wat gebruikt word door veel oplichters;
+    op deze manier worden al je pin gegevens gestolen.
+  <PrefabDirectory>k__BackingField: KantineScenario
   <CutScene>k__BackingField: {fileID: 32900000, guid: b4164c3ed2a64ae4d84584469515746d, type: 3}
-  <Choices>k__BackingField: []
+  <Choices>k__BackingField:
+  - {fileID: 11400000, guid: 4ed63980be88ab64f93bb535e6d299bd, type: 2}

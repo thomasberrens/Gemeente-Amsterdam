@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef30cd00ea684d66b04244553ce2463c, type: 3}
+  m_Name: KlikWeg
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Klik Weg
+  <DialogueText>k__BackingField: Goed dat je de mail heb genegeerd, dit is een phishing
+    mail; een methode dat gebruikt word door hackers om toegang te krijgen tot je
+    pc en/of gegevens. Maar je kan het beter verwijderen.
+  <PrefabDirectory>k__BackingField: PhishingScenario
+  <CutScene>k__BackingField: {fileID: 0}
+  <Choices>k__BackingField:
+  - {fileID: 11400000, guid: 4ed63980be88ab64f93bb535e6d299bd, type: 2}
