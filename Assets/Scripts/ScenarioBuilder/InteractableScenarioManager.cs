@@ -21,6 +21,13 @@ public class InteractableScenarioManager : MonoBehaviour {
 
         private List<GameObject> loadedObjects = new List<GameObject>();
 
+
+        public void Update()
+        {
+            if (!Input.GetKeyDown(KeyCode.L)) return;
+            RestartScenario();
+        }
+
         /// <summary>
         /// Awake is called when the script instance is being loaded.
         /// This method initializes the scenario queue and starts the first scenario.
@@ -46,7 +53,12 @@ public class InteractableScenarioManager : MonoBehaviour {
             }
             
             StartScenario(scenarioQueue.Dequeue());
-        } 
+        }
+
+        public void RestartScenario()
+        {
+            StartScenario(currentScenario);
+        }
         
         /// <summary>
         /// Starts the given scenario by resetting the scene, setting the current scenario, and playing the cutscene.
@@ -54,8 +66,8 @@ public class InteractableScenarioManager : MonoBehaviour {
         /// <param name="scenario">The InteractableScenario to start.</param>
         private void StartScenario(InteractableScenario scenario)
         {
-            onScenarioStart?.Invoke();
             ResetScene();
+            onScenarioStart?.Invoke();
             currentScenario = scenario;
             
             videoManager.PlayCutscene(scenario.CutScene);
