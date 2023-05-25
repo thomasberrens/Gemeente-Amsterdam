@@ -101,3 +101,6 @@ De code om zo een grafiek weer te geven kan je [hier](https://github.com/thomasb
 Hier kunt u zien hoe de zoekbalk op de website werkt, zodat u door spelers heen kan filteren.
 De code ervan kunt u [hier](https://github.com/thomasberrens/Gemeente-Amsterdam-Website/blob/master/src/views/DashboardView.vue) vinden onder de functie "filterPlayers"
  ![Dashboard Search Filter Visual Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Dashboard_Search_Filter.png?raw=true)
+ 
+ ### Score Calculation
+Hier kunt u zien hoe de hoogste haalbare score word uitgerekend en vervolgens word omgezet naar een score van 0 tot 10, de volledige code kunt u ook [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Assets/Scripts/ScoreSystem/ScoreManager.cs) vinden.
