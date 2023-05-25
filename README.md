@@ -92,7 +92,7 @@ Door middel van tekst en kleuren leggen we uit wat voor systemen we hebben gemaa
   
   ### Player Analytics
  Hier laat ik zien hoe de keuze word weergegeven op de website.
- [code](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/develop/Assets/Scripts/ScenarioBuilder/InteractableScenarioManager.cs) om de data van de game naar de server toe te sturen kan je onder de functie "SendChoice()".
+ [code](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/develop/Assets/Scripts/ScenarioBuilder/InteractableScenarioManager.cs) om de data van de game naar de server toe te sturen kan je onder de functie "SendChoice()" vinden.
 
 De code om zo een grafiek weer te geven kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam-Website/blob/master/src/components/ChoiceGraph.vue) vinden.
  ![Choice Analytics Visual Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Choice_Analytics.png?raw=true)
