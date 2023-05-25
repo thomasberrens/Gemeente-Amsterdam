@@ -104,3 +104,4 @@ De code ervan kunt u [hier](https://github.com/thomasberrens/Gemeente-Amsterdam-
  
  ### Score Calculation
 Hier kunt u zien hoe de hoogste haalbare score word uitgerekend en vervolgens word omgezet naar een score van 0 tot 10, de volledige code kunt u ook [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Assets/Scripts/ScoreSystem/ScoreManager.cs) vinden.
+![Score Calculation Visual Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Score_Calculation.png?raw=true)
