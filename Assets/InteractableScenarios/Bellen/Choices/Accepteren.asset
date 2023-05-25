@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1032734b99ca4253904194bb83cff7bc, type: 3}
   m_Name: Accepteren
   m_EditorClassIdentifier: 
-  <ChoiceText>k__BackingField: Ga verder naar website
+  <ChoiceText>k__BackingField: Open website
   <Score>k__BackingField: 0
   <PossibleFollowUpScenario>k__BackingField: {fileID: 11400000, guid: 6b98a5e884072554e9f48e65a75d4a05, type: 2}

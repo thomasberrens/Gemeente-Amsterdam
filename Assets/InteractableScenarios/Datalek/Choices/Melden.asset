@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1032734b99ca4253904194bb83cff7bc, type: 3}
   m_Name: Melden
   m_EditorClassIdentifier: 
-  <ChoiceText>k__BackingField: Melden bij het meld punt
+  <ChoiceText>k__BackingField: Melden bij het meld punt.
   <Score>k__BackingField: 10
-  <PossibleFollowUpScenario>k__BackingField: {fileID: 0}
+  <PossibleFollowUpScenario>k__BackingField: {fileID: 11400000, guid: 0b92d1037590bff459e8bf2ee847b143, type: 2}

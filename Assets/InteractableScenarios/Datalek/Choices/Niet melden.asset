@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1032734b99ca4253904194bb83cff7bc, type: 3}
   m_Name: Niet melden
   m_EditorClassIdentifier: 
-  <ChoiceText>k__BackingField: Niet melden bij het meld punt
+  <ChoiceText>k__BackingField: Nieuwe laptop aanvragen.
   <Score>k__BackingField: 0
-  <PossibleFollowUpScenario>k__BackingField: {fileID: 0}
+  <PossibleFollowUpScenario>k__BackingField: {fileID: 11400000, guid: f52fd3b479a9ac44f8470f9303c0e567, type: 2}
