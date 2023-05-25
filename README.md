@@ -89,3 +89,11 @@ Door middel van tekst en kleuren leggen we uit wat voor systemen we hebben gemaa
  De scenarios kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/tree/develop/Assets/InteractableScenarios) vinden.
  
   ![User Interface Visual Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Interactable_Scenario.png?raw=true)
+  
+ //uitleg wat er gebeurd
+ // link de github folder/dingetje hier
+ ![Choice Analytics Visual Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Choice_Analytics.png?raw=true)
+ 
+ //uitleg wat er gebeurd
+ // link de github folder/dingetje hier
+ ![Dashboard Search Filter Visual Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Dashboard_Search_Filter.png?raw=true)
