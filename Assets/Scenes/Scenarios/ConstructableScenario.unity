@@ -1022,6 +1022,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b0352e85c56cfac42a2a853322a5597f, type: 2}
   - {fileID: 11400000, guid: b562cc1a521a8604bb5b96512ef294b9, type: 2}
   - {fileID: 11400000, guid: bc6c890bc0b38224bbe01c062badd0a4, type: 2}
+  - {fileID: 11400000, guid: 17782c5cfcfda364f898138f4e10ccb9, type: 2}
+  - {fileID: 11400000, guid: 2a6755b6bec7cdf4daa05018ebbaff77, type: 2}
   videoManager: {fileID: 2009259487}
   dialogueController: {fileID: 2009259489}
   choiceController: {fileID: 2009259490}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Bellen
   <DialogueText>k__BackingField: De onbekende beller vraagt je naar een website te
-    gaan hoe je hiermee om?
+    gaan hoe ga je hiermee om?
   <PrefabDirectory>k__BackingField: BellenScenario
   <CutScene>k__BackingField: {fileID: 32900000, guid: 2c9967abeb7556546adb16d729f05b2c, type: 3}
   <Choices>k__BackingField:
