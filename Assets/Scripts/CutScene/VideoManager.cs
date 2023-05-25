@@ -34,12 +34,14 @@ public class VideoManager : MonoBehaviour
         RenderTexture renderTexture = new RenderTexture(Screen.width, Screen.height, 24);
 
         videoPlayer.targetTexture = renderTexture;
+
         #if WEBGL
         videoPlayer.url = GameManager.Instance.FILES_URL + videoClip.name + ".mp4";
         #else
         videoPlayer.clip = videoClip;
-        RawImage.texture = renderTexture;
+        
         #endif
+        RawImage.texture = renderTexture;
 
         // Enable the RawImage before playing the video
         RawImage.enabled = true;

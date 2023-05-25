@@ -158,7 +158,7 @@ public class InteractableScenarioManager : MonoBehaviour {
             string json = JsonAdapter.Serialize(jsonObject);
             Debug.Log("JSON: " + json);
 
-            UnityWebRequest www = new UnityWebRequest(GameManager.Instance.API_URL + "gameinfo/add/choice", "POST");
+            UnityWebRequest www = new UnityWebRequest(GameManager.Instance.ApiURL + "gameinfo/add/choice", "POST");
             byte[] bodyRaw = Encoding.UTF8.GetBytes(json);
             www.uploadHandler = new UploadHandlerRaw(bodyRaw);
             www.downloadHandler = new DownloadHandlerBuffer();

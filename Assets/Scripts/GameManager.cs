@@ -1,19 +1,22 @@
+using System.Collections;
 using System.Net.Http;
 using System.Text;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.Serialization;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> DontDestroyOnLoadObjects = new List<GameObject>();
+    [SerializeField] private List<GameObject> dontDestroyOnLoadObjects = new List<GameObject>();
     public static GameManager Instance {get; private set; }
     public PlayerInfo PlayerInfo { get; set; } = new PlayerInfo();
-
-    [field: SerializeField] public string API_URL = "http://localhost:8080/";
-
-    [field: SerializeField] public string FILES_URL { get; private set; } = "https://thomasberrens.github.io/Gemeente-Amsterdam/public/";
-
+    
+    [field: SerializeField] public string ApiURL { get; private set; } = "http://localhost:8080/";
+    [field: SerializeField] public string FilesURL { get; private set; } = "https://thomasberrens.github.io/Gemeente-Amsterdam/public/";
+    
+    [SerializeField] private TMP_Text authenticationFeedback;
     private void Awake()
     {
         Instance ??= this;
@@ -22,9 +25,9 @@ public class GameManager : MonoBehaviour
         Screen.SetResolution(1920, 1080, Screen.fullScreen);
         Screen.fullScreen = true;
 
-        for (int i = 0; i < DontDestroyOnLoadObjects.Count; i++)
+        for (int i = 0; i < dontDestroyOnLoadObjects.Count; i++)
         {
-            DontDestroyOnLoad(DontDestroyOnLoadObjects[i]);
+            DontDestroyOnLoad(dontDestroyOnLoadObjects[i]);
         }
     }
     
@@ -48,9 +51,8 @@ public class GameManager : MonoBehaviour
         jsonObject.AddField("playerID", PlayerInfo.UUID);
 
         string json = JsonAdapter.Serialize(jsonObject);
-
-        Debug.Log("JSON: " + json);
-        UnityWebRequest www = new UnityWebRequest(API_URL + "gameinfo/create", "POST");
+        
+        UnityWebRequest www = new UnityWebRequest(ApiURL + "gameinfo/create", "POST");
         byte[] bodyRaw = Encoding.UTF8.GetBytes(json);
         www.uploadHandler = new UploadHandlerRaw(bodyRaw);
         www.downloadHandler = new DownloadHandlerBuffer();
@@ -63,6 +65,8 @@ public class GameManager : MonoBehaviour
             if (www.result != UnityWebRequest.Result.Success)
             {
                 Debug.Log("Couldn't verify ID.");
+                if (authenticationFeedback == null) return;
+                StartCoroutine(ShowAuthenticationFeedback());
             }
             else
             {
@@ -74,6 +78,13 @@ public class GameManager : MonoBehaviour
                 SceneController.SwitchScene("MainScene");
             }
         } ;
+    }
+
+    private IEnumerator ShowAuthenticationFeedback()
+    {
+        authenticationFeedback.gameObject.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        authenticationFeedback.gameObject.SetActive(false);
     }
 
 }
