@@ -16,7 +16,7 @@ MonoBehaviour:
   <DialogueText>k__BackingField: De vorige pinautomaat werkt niet meer, bij de huidige
     kan je niet contactloos betalen; hoe ga je betalen voor je eten en drinken?
   <PrefabDirectory>k__BackingField: KantineScenario
-  <CutScene>k__BackingField: {fileID: 32900000, guid: c07700a6feaf8104fb9f88202f394c0c, type: 3}
+  <CutScene>k__BackingField: {fileID: 32900000, guid: 84c1a408d4b103f4c8d2477a124bbb04, type: 3}
   <Choices>k__BackingField:
   - {fileID: 11400000, guid: c959f08288c3049499705575fedcf1a4, type: 2}
   - {fileID: 11400000, guid: f805e24016e3c86469c9e1541dfa8aff, type: 2}

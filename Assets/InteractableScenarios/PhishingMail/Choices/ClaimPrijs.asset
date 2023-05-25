@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: ClaimPrijs
   m_EditorClassIdentifier: 
   <ChoiceText>k__BackingField: Claim de prijs!
-  <Score>k__BackingField: -10
+  <Score>k__BackingField: 0
   <PossibleFollowUpScenario>k__BackingField: {fileID: 11400000, guid: a8543566638e1aa4786d68453ddcebca, type: 2}

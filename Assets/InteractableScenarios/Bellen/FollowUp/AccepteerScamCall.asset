@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ef30cd00ea684d66b04244553ce2463c, type: 3}
-  m_Name: BellenScenario
+  m_Name: AccepteerScamCall
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: Bellen
-  <DialogueText>k__BackingField: De onbekende beller vraagt je naar een website te
-    gaan hoe je hiermee om?
+  <Name>k__BackingField: accepteer scam call
+  <DialogueText>k__BackingField: 'Je hebt zojuist door een scam caller opgebeld die
+    je verwijst naar een website waar zij je data kunnen stelen. En je hebt je inlog
+    gegevens verteld. DOE DIT NOOIT! '
   <PrefabDirectory>k__BackingField: BellenScenario
-  <CutScene>k__BackingField: {fileID: 32900000, guid: 2c9967abeb7556546adb16d729f05b2c, type: 3}
+  <CutScene>k__BackingField: {fileID: 32900000, guid: 5eda974d44fcacd4f84823658d60e678, type: 3}
   <Choices>k__BackingField:
-  - {fileID: 11400000, guid: 47087879bd7f9944c98148f599489160, type: 2}
-  - {fileID: 11400000, guid: 74b1b9d3f61542040bca606283efb861, type: 2}
+  - {fileID: 11400000, guid: 4ed63980be88ab64f93bb535e6d299bd, type: 2}

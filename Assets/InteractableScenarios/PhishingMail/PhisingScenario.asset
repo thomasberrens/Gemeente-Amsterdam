@@ -16,7 +16,7 @@ MonoBehaviour:
   <DialogueText>k__BackingField: Je heb een nieuwe mail gekregen, wat ga je hier
     mee doen?
   <PrefabDirectory>k__BackingField: PhishingScenario
-  <CutScene>k__BackingField: {fileID: 32900000, guid: e11306e345470154c9aa03410abeec64, type: 3}
+  <CutScene>k__BackingField: {fileID: 32900000, guid: 6d856fe062b12494e83f61525ce23495, type: 3}
   <Choices>k__BackingField:
   - {fileID: 11400000, guid: 74d688835576b4d4eaaf92e8c6869c56, type: 2}
   - {fileID: 11400000, guid: 30d53cbb9ee4ab94aa149bd764368ba4, type: 2}

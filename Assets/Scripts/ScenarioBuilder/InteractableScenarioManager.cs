@@ -149,6 +149,8 @@ public class InteractableScenarioManager : MonoBehaviour {
         
         public void SendChoice(InteractableChoice choice)
         {
+            if (choice.Score == -1) return;
+
             JsonObject jsonObject = new JsonObject(choice);
             jsonObject.AddField("scenario", currentScenario.Name);
             jsonObject.AddField("gameID", GameManager.Instance.PlayerInfo.GameID);
