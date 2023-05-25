@@ -8,7 +8,7 @@ public class MenuHandler : MonoBehaviour
     
     [SerializeField] private GameObject settingsUiElements;
     [SerializeField] private GameObject mainMenuUiElements;
-
+    
     /// <summary>
     /// Awake is called when the script instance is being loaded.
     /// This method checks if the user is in the main menu or not.
