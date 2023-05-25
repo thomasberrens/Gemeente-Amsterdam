@@ -15,7 +15,7 @@ MonoBehaviour:
   <Name>k__BackingField: Klik Weg
   <DialogueText>k__BackingField: Goed dat je de mail heb genegeerd, dit is een phishing
     mail; een methode dat gebruikt word door hackers om toegang te krijgen tot je
-    pc en/of gegevens.
+    pc en/of gegevens. Maar je kan het beter verwijderen.
   <PrefabDirectory>k__BackingField: PhishingScenario
   <CutScene>k__BackingField: {fileID: 0}
   <Choices>k__BackingField:
