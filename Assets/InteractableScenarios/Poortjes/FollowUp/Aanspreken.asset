@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Aanspreken
   <DialogueText>k__BackingField: Goed gedaan! Je moet altijd iemand aanspreken als
-    iemand achter je aan loopt zonder pasje en die niet werkt in het bedrijf.
+    diegene achter je aan loopt zonder pasje. Al helemaal als die persoon niet bij
+    het bedrijf werkt.
   <PrefabDirectory>k__BackingField: PoortjesScenario
   <CutScene>k__BackingField: {fileID: 32900000, guid: 8fe708ae678368f4daeb1fb59a2c3524, type: 3}
   <Choices>k__BackingField:

@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: PoortjesScenario
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Poortjes Scenario
-  <DialogueText>k__BackingField: Wat doe je nadat iemand met je mee liep achter de
-    poortjes door.
+  <DialogueText>k__BackingField: Wat doe je als iemand met je mee loopt door de poortjes.
   <PrefabDirectory>k__BackingField: PoortjesScenario
   <CutScene>k__BackingField: {fileID: 32900000, guid: 4625f9704e54b64419641b42061b128d, type: 3}
   <Choices>k__BackingField:

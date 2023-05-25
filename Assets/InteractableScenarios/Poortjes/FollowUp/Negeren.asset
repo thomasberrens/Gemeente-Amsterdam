@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Negeren
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Negeren
-  <DialogueText>k__BackingField: Dit is niet de bedoeling, hierdoor laat je iemand
-    binnen die niet in het bedrijf werkt en misschien slechte bedoelingen heeft.
+  <DialogueText>k__BackingField: Dit is niet de bedoeling. Door iemand niet aan te
+    spreken laat je iemand binnen die niet in het bedrijf werkt en misschien slechte
+    bedoelingen heeft.
   <PrefabDirectory>k__BackingField: PoortjesScenario
   <CutScene>k__BackingField: {fileID: 32900000, guid: c9ea55b7e4d28dc4386a435e3bf1b411, type: 3}
   <Choices>k__BackingField:

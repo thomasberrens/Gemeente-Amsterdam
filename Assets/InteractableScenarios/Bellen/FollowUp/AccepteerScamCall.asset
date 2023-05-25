@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: AccepteerScamCall
   m_EditorClassIdentifier: 
   <Name>k__BackingField: accepteer scam call
-  <DialogueText>k__BackingField: 'Je hebt zojuist door een scam caller opgebeld die
-    je verwijst naar een website waar zij je data kunnen stelen. En je hebt je inlog
-    gegevens verteld. DOE DIT NOOIT! '
+  <DialogueText>k__BackingField: Je hebt zojuist door een oplichter opgebeld die
+    je verwijst naar een website waar zij je data kunnen stelen. Vertel nooit je
+    inlog gegevens aan vreemden. DOE DIT NOOIT!
   <PrefabDirectory>k__BackingField: BellenScenario
   <CutScene>k__BackingField: {fileID: 32900000, guid: 5eda974d44fcacd4f84823658d60e678, type: 3}
   <Choices>k__BackingField:

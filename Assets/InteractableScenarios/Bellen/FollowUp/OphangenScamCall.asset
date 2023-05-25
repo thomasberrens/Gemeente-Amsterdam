@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: ophangen scam call
   <DialogueText>k__BackingField: Dit is de juiste keuze goed gedaan! Als een onbekende
-    beller je belt moet je altijd oppassen met wat je zegt, en als ze iets aan je
-    vragen om te doen moet je per direct ophangen.
+    beller je belt moet je altijd oppassen met wat je zegt en welke informatie je
+    deelt. Als ze iets aan je vragen om te doen moet je per direct ophangen.
   <PrefabDirectory>k__BackingField: BellenScenario
   <CutScene>k__BackingField: {fileID: 32900000, guid: 1e4a77bf3e8a48f4099bdf948e4c449c, type: 3}
   <Choices>k__BackingField:
