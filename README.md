@@ -90,12 +90,14 @@ Door middel van tekst en kleuren leggen we uit wat voor systemen we hebben gemaa
  
   ![User Interface Visual Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Interactable_Scenario.png?raw=true)
   
+  ### Player Analytics
  Hier laat ik zien hoe de keuze word weergegeven op de website.
  [code](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/develop/Assets/Scripts/ScenarioBuilder/InteractableScenarioManager.cs) om de data van de game naar de server toe te sturen kan je onder de functie "SendChoice()".
 
 De code om zo een grafiek weer te geven kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam-Website/blob/master/src/components/ChoiceGraph.vue) vinden.
  ![Choice Analytics Visual Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Choice_Analytics.png?raw=true)
  
+### Search filter
 Hier kunt u zien hoe de zoekbalk op de website werkt, zodat u door spelers heen kan filteren.
 De code ervan kunt u [hier](https://github.com/thomasberrens/Gemeente-Amsterdam-Website/blob/master/src/views/DashboardView.vue) vinden onder de functie "filterPlayers"
  ![Dashboard Search Filter Visual Sheet](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/master/Wiki/VS_Dashboard_Search_Filter.png?raw=true)
