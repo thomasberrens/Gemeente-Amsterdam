@@ -10,6 +10,7 @@ public class ChoiceController : MonoBehaviour
     [SerializeField] private GameObject choicePrefab;
     [SerializeField] private UnityEvent<InteractableChoice> onChoiceSelected;
     [SerializeField] private Button replayButton;
+    
     /// <summary>
     /// Initializes and displays the list of interactable choices by instantiating them as UI elements. Also adds a listener to each choice object that invokes the onChoiceSelected event.
     /// </summary>
@@ -29,8 +30,6 @@ public class ChoiceController : MonoBehaviour
         });
     }
     
-    
-
     /// <summary>
     /// Disables the choice UI elements by destroying all instantiated choice objects.
     /// </summary>

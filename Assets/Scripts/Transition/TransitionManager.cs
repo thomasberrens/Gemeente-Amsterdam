@@ -6,19 +6,25 @@ public class TransitionManager : MonoBehaviour
 {
     [SerializeField] private Image transitionImage;
     [SerializeField] private float transitionDuration = 1f;
-    
+
     private Coroutine currentTransition;
 
+    /// <summary>
+    /// Starts a transition animation.
+    /// </summary>
     public void StartTransition()
     {
         if (currentTransition != null)
         {
             StopCoroutine(currentTransition);
         }
-        
+
         currentTransition = StartCoroutine(DoTransition());
     }
 
+    /// <summary>
+    /// Coroutine that handles the transition animation.
+    /// </summary>
     private IEnumerator DoTransition()
     {
         Color startColor = Color.black;
@@ -28,7 +34,7 @@ public class TransitionManager : MonoBehaviour
         while (timer < transitionDuration)
         {
             float t = timer / transitionDuration;
-            float easedT = EaseFunctions.EaseInCubic(t); 
+            float easedT = EaseFunctions.EaseInCubic(t);
             transitionImage.color = Color.Lerp(startColor, endColor, easedT);
 
             yield return null;
@@ -38,8 +44,3 @@ public class TransitionManager : MonoBehaviour
         transitionImage.color = endColor;
     }
 }
-
-
-
-
-

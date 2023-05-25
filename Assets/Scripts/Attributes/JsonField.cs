@@ -1,8 +1,5 @@
 ﻿using System;
 
-/// <summary>
-/// Attribute used to mark a property or field for JSON serialization.
-/// </summary>
 [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]
 public class JsonField : Attribute
 {

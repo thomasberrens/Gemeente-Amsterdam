@@ -1,4 +1,3 @@
-using System.Net.Http;
 using System.Text;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,7 +6,7 @@ using UnityEngine.Networking;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private List<GameObject> DontDestroyOnLoadObjects = new List<GameObject>();
-    public static GameManager Instance {get; private set; }
+    public static GameManager Instance { get; private set; }
     public PlayerInfo PlayerInfo { get; set; } = new PlayerInfo();
 
     [field: SerializeField] public string API_URL = "http://localhost:8080/";
@@ -17,7 +16,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance ??= this;
-        
+
         // Set up the resolution and fullscreen mode for web build
         Screen.SetResolution(1920, 1080, Screen.fullScreen);
         Screen.fullScreen = true;
@@ -27,7 +26,7 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(DontDestroyOnLoadObjects[i]);
         }
     }
-    
+
     /// <summary>
     /// Quits the application.
     /// </summary>
@@ -36,11 +35,18 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
+    /// <summary>
+    /// Sets the UUID for the player.
+    /// </summary>
+    /// <param name="UUID">The UUID to set.</param>
     public void SetUUID(string UUID)
     {
         PlayerInfo.UUID = UUID;
     }
 
+    /// <summary>
+    /// Registers the game info for the player.
+    /// </summary>
     public void RegisterGameInfo()
     {
         JsonObject jsonObject = new JsonObject();
@@ -73,7 +79,6 @@ public class GameManager : MonoBehaviour
 
                 SceneController.SwitchScene("MainScene");
             }
-        } ;
+        };
     }
-
 }

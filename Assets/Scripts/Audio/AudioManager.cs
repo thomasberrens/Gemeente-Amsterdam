@@ -1,8 +1,5 @@
 using UnityEngine;
 
-/// <summary>
-/// Manages the audio playback in the game.
-/// </summary>
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance { get; private set; }
@@ -19,6 +16,9 @@ public class AudioManager : MonoBehaviour
         GetAudioSource();
     }
 
+    /// <summary>
+    /// Finds the camera object with the specified tag and gets or adds an AudioSource component to it.
+    /// </summary>
     private void GetAudioSource()
     {
         camera = GameObject.FindWithTag(cameraTag);
@@ -29,6 +29,7 @@ public class AudioManager : MonoBehaviour
 
         audioSource = camera.AddComponent<AudioSource>();
     }
+
 
     /// <summary>
     /// Plays the specified audio clip.
