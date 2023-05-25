@@ -1,8 +1,12 @@
 using UnityEngine;
 
+/// <summary>
+/// Contains various easing functions for interpolation and animation.
+/// </summary>
 public class EaseFunctions
 {
-       public static float Linear(float t)
+    
+    public static float Linear(float t)
     {
         return t;
     }

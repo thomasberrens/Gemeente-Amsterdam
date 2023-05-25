@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Net.Http;
 using System.Text;
 using System.Collections.Generic;
 using TMPro;
@@ -20,7 +18,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance ??= this;
-        
+
         // Set up the resolution and fullscreen mode for web build
         Screen.SetResolution(1920, 1080, Screen.fullScreen);
         Screen.fullScreen = true;
@@ -30,7 +28,7 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(dontDestroyOnLoadObjects[i]);
         }
     }
-    
+
     /// <summary>
     /// Quits the application.
     /// </summary>
@@ -39,11 +37,18 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
+    /// <summary>
+    /// Sets the UUID for the player.
+    /// </summary>
+    /// <param name="UUID">The UUID to set.</param>
     public void SetUUID(string UUID)
     {
         PlayerInfo.UUID = UUID;
     }
 
+    /// <summary>
+    /// Registers the game info for the player.
+    /// </summary>
     public void RegisterGameInfo()
     {
         JsonObject jsonObject = new JsonObject();
@@ -77,9 +82,11 @@ public class GameManager : MonoBehaviour
 
                 SceneController.SwitchScene("MainScene");
             }
-        } ;
+        };
     }
-
+    /// <summary>
+    /// Shows authentication failed feedback.
+    /// </summary>
     private IEnumerator ShowAuthenticationFeedback()
     {
         authenticationFeedback.gameObject.SetActive(true);
