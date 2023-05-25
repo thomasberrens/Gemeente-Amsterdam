@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ChoiceText>k__BackingField: Aanspreken
   <Score>k__BackingField: 10
-  <PossibleFollowUpScenario>k__BackingField: {fileID: 0}
+  <PossibleFollowUpScenario>k__BackingField: {fileID: 11400000, guid: afd9e70401c816e4bbdf55f243e960ac, type: 2}

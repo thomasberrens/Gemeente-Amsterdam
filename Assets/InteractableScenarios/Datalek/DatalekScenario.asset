@@ -16,7 +16,7 @@ MonoBehaviour:
   <DialogueText>k__BackingField: Je Laptop is zojuist gestolen. Hoe ga je hiermee
     om?
   <PrefabDirectory>k__BackingField: DatalekScenario
-  <CutScene>k__BackingField: {fileID: 0}
+  <CutScene>k__BackingField: {fileID: 32900000, guid: 635c7cac45f765d4da25d599b206759a, type: 3}
   <Choices>k__BackingField:
   - {fileID: 11400000, guid: 25b11a7c611704a44a1feb28c2bbc507, type: 2}
   - {fileID: 11400000, guid: 5e922ce2aabb63d48ad483ef223b2df5, type: 2}
