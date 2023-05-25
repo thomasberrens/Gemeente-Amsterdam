@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
         } ;
     }
 
-    IEnumerator ShowAuthenticationFeedback()
+    private IEnumerator ShowAuthenticationFeedback()
     {
         authenticationFeedback.gameObject.SetActive(true);
         yield return new WaitForSeconds(3f);
