@@ -1,8 +1,11 @@
 using UnityEngine;
 
+/// <summary>
+/// Manages the audio playback in the game.
+/// </summary>
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager Instance {get; private set; }
+    public static AudioManager Instance { get; private set; }
     private AudioSource audioSource;
     private GameObject camera;
     private string audioKey = "AudioValue";
@@ -20,12 +23,17 @@ public class AudioManager : MonoBehaviour
     {
         camera = GameObject.FindWithTag(cameraTag);
         if (camera == null) return;
+
         audioSource = camera.GetComponent<AudioSource>();
         if (audioSource != null) return;
+
         audioSource = camera.AddComponent<AudioSource>();
     }
 
-    // These scripts need to seperate since you can only use 1 parameter with a onClickEvent in the unity inspector
+    /// <summary>
+    /// Plays the specified audio clip.
+    /// </summary>
+    /// <param name="audioClipName">The name of the audio clip to play.</param>
     public void PlayAudio(string audioClipName)
     {
         // Make sure to put the audio in the map: Assets/Recources/Audio/
@@ -36,6 +44,10 @@ public class AudioManager : MonoBehaviour
         audioSource.Play();
     }
 
+    /// <summary>
+    /// Plays a sound effect using the specified audio clip.
+    /// </summary>
+    /// <param name="audioClipName">The name of the audio clip to play as a sound effect.</param>
     public void PlaySoundEffect(string audioClipName)
     {
         // Make sure to put the audio in the map: Assets/Recources/Audio/
@@ -45,16 +57,26 @@ public class AudioManager : MonoBehaviour
         audioSource.PlayOneShot(audioClip);
     }
 
+    /// <summary>
+    /// Checks if audio is currently playing.
+    /// </summary>
+    /// <returns><c>true</c> if audio is playing; otherwise, <c>false</c>.</returns>
     public bool isAudioPlaying()
     {
         return audioSource.isPlaying;
     }
 
+    /// <summary>
+    /// Pauses the audio playback.
+    /// </summary>
     public void PauseAudio()
     {
         audioSource.Pause();
     }
 
+    /// <summary>
+    /// Unpauses the audio playback.
+    /// </summary>
     public void UnpauseAudio()
     {
         audioSource.UnPause();

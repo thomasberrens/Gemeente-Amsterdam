@@ -32,7 +32,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4114340672226132757}
+  - {fileID: 8687010391011736364}
   - {fileID: 5599044401113705884}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -116,10 +116,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4886760e7cc0e574e94c44b53955e9c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseUiElements: {fileID: 0}
-  settingsUiElements: {fileID: 4299583639297638875}
+  settingsUiElements: {fileID: 8808009993202727394}
   mainMenuUiElements: {fileID: 9057407625519469850}
---- !u!1001 &4726359472958402420
+--- !u!1001 &317085517
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -178,6 +177,22 @@ PrefabInstance:
     - target: {fileID: 4298846012192756783, guid: 73b7c6d3b160ff446a41e3bbc0014903, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660524559724899865, guid: 73b7c6d3b160ff446a41e3bbc0014903, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660524559724899865, guid: 73b7c6d3b160ff446a41e3bbc0014903, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660524559724899865, guid: 73b7c6d3b160ff446a41e3bbc0014903, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660524559724899865, guid: 73b7c6d3b160ff446a41e3bbc0014903, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5699250871692442688, guid: 73b7c6d3b160ff446a41e3bbc0014903, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -308,6 +323,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8687010391316229217, guid: 73b7c6d3b160ff446a41e3bbc0014903, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.2042277
+      objectReference: {fileID: 0}
+    - target: {fileID: 8687010391316229217, guid: 73b7c6d3b160ff446a41e3bbc0014903, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.2042277
+      objectReference: {fileID: 0}
+    - target: {fileID: 8687010391316229217, guid: 73b7c6d3b160ff446a41e3bbc0014903, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.2042277
+      objectReference: {fileID: 0}
+    - target: {fileID: 8687010391316229217, guid: 73b7c6d3b160ff446a41e3bbc0014903, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -357,22 +384,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8808009993423302319, guid: 73b7c6d3b160ff446a41e3bbc0014903, type: 3}
       propertyPath: m_Name
-      value: P_SettingsUI
+      value: 'P_SettingsUI '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73b7c6d3b160ff446a41e3bbc0014903, type: 3}
---- !u!224 &4114340672226132757 stripped
+--- !u!224 &8687010391011736364 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8687010391316229217, guid: 73b7c6d3b160ff446a41e3bbc0014903, type: 3}
-  m_PrefabInstance: {fileID: 4726359472958402420}
+  m_PrefabInstance: {fileID: 317085517}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4299583639297638875 stripped
+--- !u!1 &8808009993202727394 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8808009993423302319, guid: 73b7c6d3b160ff446a41e3bbc0014903, type: 3}
-  m_PrefabInstance: {fileID: 4726359472958402420}
+  m_PrefabInstance: {fileID: 317085517}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8622210126810556964
 PrefabInstance:
