@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef30cd00ea684d66b04244553ce2463c, type: 3}
+  m_Name: DatalekScenario
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Datalek scenario
+  <DialogueText>k__BackingField: Je Laptop is zojuist gestolen. Hoe ga je hiermee
+    om?
+  <PrefabDirectory>k__BackingField: DatalekScenario
+  <CutScene>k__BackingField: {fileID: 32900000, guid: 635c7cac45f765d4da25d599b206759a, type: 3}
+  <Choices>k__BackingField:
+  - {fileID: 11400000, guid: 25b11a7c611704a44a1feb28c2bbc507, type: 2}
+  - {fileID: 11400000, guid: 5e922ce2aabb63d48ad483ef223b2df5, type: 2}

@@ -1,5 +1,4 @@
-using System;
-using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -13,13 +12,18 @@ public class VideoManager : MonoBehaviour
     { 
         [field: SerializeField]public VideoClip VideoClip { get; set; }                // The video clip to play during the cutscene
     }
-
-    [field: SerializeField] public RawImage RawImage { get; set; } 
-    [field: SerializeField] public List<Cutscene> Cutscenes { get; set; }                // List of cutscenes
+    [field: SerializeField] public RawImage RawImage { get; set; }
     [field: SerializeField] public UnityEvent OnVideoEnd { get; private set; }
+    
+    [SerializeField] private VideoPlayer videoPlayer;
+    
     private bool cutscenePlaying = false;           // Flag to check if cutscene is currently playing  
 
-    private void PlayCutscene(int cutsceneIndex)
+    /// <summary>
+    /// Plays the provided cutscene video clip. If a cutscene is already playing, the method returns without playing the new clip.
+    /// </summary>
+    /// <param name="videoClip">The VideoClip to play for the cutscene.</param>
+    public void PlayCutscene(VideoClip videoClip)
     {
         if (cutscenePlaying)
             return;
@@ -28,23 +32,36 @@ public class VideoManager : MonoBehaviour
 
         // Play the video clip for the cutscene
         RenderTexture renderTexture = new RenderTexture(Screen.width, Screen.height, 24);
-        VideoPlayer videoPlayer = GetComponent<VideoPlayer>();
+
         videoPlayer.targetTexture = renderTexture;
-        videoPlayer.clip = Cutscenes[cutsceneIndex].VideoClip;
+
+        #if WEBGL
+        videoPlayer.url = GameManager.Instance.FILES_URL + videoClip.name + ".mp4";
+        #else
+        videoPlayer.clip = videoClip;
+        
+        #endif
         RawImage.texture = renderTexture;
 
         // Enable the RawImage before playing the video
         RawImage.enabled = true;
+        
+        RawImage.gameObject.SetActive(true);
 
         videoPlayer.Play();
     }
-
+    /// <summary>
+    /// Event handler for when the cutscene video finishes playing. Disables the RawImage, stops video playback, and invokes the OnVideoEnd event.
+    /// </summary>
+    /// <param name="vp">The VideoPlayer that finished playing the video.</param>
     private void OnVideoFinished(VideoPlayer vp)
     {
         cutscenePlaying = false;
 
         // Disable the RawImage
         RawImage.enabled = false;
+        
+        RawImage.gameObject.SetActive(false);
 
         // Stop the video playback
         vp.Stop();
@@ -52,10 +69,13 @@ public class VideoManager : MonoBehaviour
         OnVideoEnd?.Invoke();
     }
 
+    /// <summary>
+    /// Awake is called when the script instance is being loaded.
+    /// This method adds the OnVideoFinished event handler to the videoPlayer's loopPointReached event.
+    /// </summary>
     private void Awake()
     {
-        PlayCutscene(0);
         // Add listener for when the video finishes playing
-        GetComponent<VideoPlayer>().loopPointReached += OnVideoFinished;
+        videoPlayer.loopPointReached += OnVideoFinished;
     }
 }
