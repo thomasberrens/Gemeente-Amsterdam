@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef30cd00ea684d66b04244553ce2463c, type: 3}
+  m_Name: OphangenScamCall
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: ophangen scam call
+  <DialogueText>k__BackingField: Dit is de juiste keuze goed gedaan! Als een onbekende
+    beller je belt moet je altijd oppassen met wat je zegt en welke informatie je
+    deelt. Als ze iets aan je vragen om te doen moet je per direct ophangen.
+  <PrefabDirectory>k__BackingField: BellenScenario
+  <CutScene>k__BackingField: {fileID: 32900000, guid: 1e4a77bf3e8a48f4099bdf948e4c449c, type: 3}
+  <Choices>k__BackingField:
+  - {fileID: 11400000, guid: 4ed63980be88ab64f93bb535e6d299bd, type: 2}

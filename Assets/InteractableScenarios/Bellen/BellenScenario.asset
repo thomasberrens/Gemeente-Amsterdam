@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: BellenScenario
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Bellen
-  <DialogueText>k__BackingField: 
+  <DialogueText>k__BackingField: De onbekende beller vraagt je om naar een website
+    te gaan hoe ga je hiermee om?
   <PrefabDirectory>k__BackingField: BellenScenario
-  <CutScene>k__BackingField: {fileID: 32900000, guid: 4ac30833d2ba82842ac1bd4bded2c611, type: 3}
-  <Choices>k__BackingField: []
+  <CutScene>k__BackingField: {fileID: 32900000, guid: 2c9967abeb7556546adb16d729f05b2c, type: 3}
+  <Choices>k__BackingField:
+  - {fileID: 11400000, guid: 47087879bd7f9944c98148f599489160, type: 2}
+  - {fileID: 11400000, guid: 74b1b9d3f61542040bca606283efb861, type: 2}

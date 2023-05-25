@@ -16,7 +16,7 @@ MonoBehaviour:
   <DialogueText>k__BackingField: Iemand vroeg het wachtwoord van je kluisje, hoe
     ga je hier mee om?
   <PrefabDirectory>k__BackingField: KluisjesScenario
-  <CutScene>k__BackingField: {fileID: 32900000, guid: 0e1ca6f11a4075640928244e8207a85c, type: 3}
+  <CutScene>k__BackingField: {fileID: 32900000, guid: 256a151aab091664dadf69a65f0bb9b4, type: 3}
   <Choices>k__BackingField:
   - {fileID: 11400000, guid: 1c3091c9cff42444ba82e2f97b6364e7, type: 2}
   - {fileID: 11400000, guid: 2599142766b4c2a4b92cfe471bf15b04, type: 2}

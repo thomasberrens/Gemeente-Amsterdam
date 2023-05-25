@@ -20,13 +20,7 @@ public class InteractableScenarioManager : MonoBehaviour {
         private InteractableScenario currentScenario;
 
         private List<GameObject> loadedObjects = new List<GameObject>();
-
-
-        public void Update()
-        {
-            if (!Input.GetKeyDown(KeyCode.L)) return;
-            RestartScenario();
-        }
+    
 
         /// <summary>
         /// Awake is called when the script instance is being loaded.
@@ -131,11 +125,12 @@ public class InteractableScenarioManager : MonoBehaviour {
         public void OnChoiceSelected(InteractableChoice choice)
         {
             bool hasFollowUp = choice.PossibleFollowUpScenario != null;
-            
-            // we want to remove this instance later and just use a reference
-            ScoreManager.Instance.AddScore(choice.Score);
 
-            if (choice.Score != 0) SendChoice(choice);
+            if (choice.Score != -1)
+            {
+                SendChoice(choice);
+                ScoreManager.Instance.AddScore(choice.Score);
+            }
 
 
             if (hasFollowUp)

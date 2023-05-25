@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef30cd00ea684d66b04244553ce2463c, type: 3}
-  m_Name: New Interactable Scenario
+  m_Script: {fileID: 11500000, guid: 1032734b99ca4253904194bb83cff7bc, type: 3}
+  m_Name: Melden
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: 
-  <DialogueText>k__BackingField: 
-  <PrefabDirectory>k__BackingField: 
-  <CutScene>k__BackingField: {fileID: 0}
-  <Choices>k__BackingField: []
+  <ChoiceText>k__BackingField: Melden bij het meld punt.
+  <Score>k__BackingField: 10
+  <PossibleFollowUpScenario>k__BackingField: {fileID: 11400000, guid: 0b92d1037590bff459e8bf2ee847b143, type: 2}

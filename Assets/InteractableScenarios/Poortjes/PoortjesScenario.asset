@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef30cd00ea684d66b04244553ce2463c, type: 3}
+  m_Name: PoortjesScenario
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Poortjes Scenario
+  <DialogueText>k__BackingField: Wat doe je als iemand met je mee loopt door de poortjes?
+  <PrefabDirectory>k__BackingField: PoortjesScenario
+  <CutScene>k__BackingField: {fileID: 32900000, guid: 4625f9704e54b64419641b42061b128d, type: 3}
+  <Choices>k__BackingField:
+  - {fileID: 11400000, guid: 4bb91ed0bdadb68459ea29f03aeffe1d, type: 2}
+  - {fileID: 11400000, guid: f359667cdd913154ab94064590e728b2, type: 2}

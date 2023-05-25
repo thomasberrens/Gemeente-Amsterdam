@@ -348,7 +348,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &1293032483
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1018,9 +1018,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <InteractableScenarios>k__BackingField:
+  - {fileID: 11400000, guid: 17782c5cfcfda364f898138f4e10ccb9, type: 2}
   - {fileID: 11400000, guid: 8b6d7c4d7adeb494785c5d3423a6fc50, type: 2}
   - {fileID: 11400000, guid: b0352e85c56cfac42a2a853322a5597f, type: 2}
+  - {fileID: 11400000, guid: 2a6755b6bec7cdf4daa05018ebbaff77, type: 2}
   - {fileID: 11400000, guid: b562cc1a521a8604bb5b96512ef294b9, type: 2}
+  - {fileID: 11400000, guid: bc6c890bc0b38224bbe01c062badd0a4, type: 2}
   videoManager: {fileID: 2009259487}
   dialogueController: {fileID: 2009259489}
   choiceController: {fileID: 2009259490}

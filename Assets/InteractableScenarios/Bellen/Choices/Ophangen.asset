@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1032734b99ca4253904194bb83cff7bc, type: 3}
   m_Name: Ophangen
   m_EditorClassIdentifier: 
-  <ChoiceText>k__BackingField: 
-  <Score>k__BackingField: 0
-  <Explanation>k__BackingField: 
-  <PossibleFollowUpScenario>k__BackingField: {fileID: 0}
+  <ChoiceText>k__BackingField: Hang het gesprek op
+  <Score>k__BackingField: 10
+  <PossibleFollowUpScenario>k__BackingField: {fileID: 11400000, guid: 629c2649e5c87554299d61643c053ef2, type: 2}

@@ -13,7 +13,5 @@ MonoBehaviour:
   m_Name: Pinpas
   m_EditorClassIdentifier: 
   <ChoiceText>k__BackingField: Gebruik pinpas
-  <Score>k__BackingField: -5
-  <Explanation>k__BackingField: Je heb geen officiele melding gekregen dat het pinautomaat
-    niet meer werkt, het zou dus kunnen dat je pin gegevens gestolen worden.
+  <Score>k__BackingField: 0
   <PossibleFollowUpScenario>k__BackingField: {fileID: 11400000, guid: 5ad8a6f223885a149a98ac46f1f1ea6b, type: 2}

@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Begrepen
   m_EditorClassIdentifier: 
   <ChoiceText>k__BackingField: Begrepen!
-  <Score>k__BackingField: 0
-  <Explanation>k__BackingField: 
+  <Score>k__BackingField: -1
   <PossibleFollowUpScenario>k__BackingField: {fileID: 0}
