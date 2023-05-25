@@ -82,7 +82,7 @@ Door middel van tekst en kleuren leggen we uit wat voor systemen we hebben gemaa
  ### Interactable Scenario Visual Sheet
  Hier laat ik zien hoe je een (interactable) scenario kan configureren.
  
- De code van de intertactable scneario manager kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/develop/Assets/Scripts/ScenarioBuilder/InteractableScenarioManager.cs) vinden.
+ De code van de intertactable scenario manager kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/blob/develop/Assets/Scripts/ScenarioBuilder/InteractableScenarioManager.cs) vinden.
  
  De manager heeft ook ondersteunende scripts, die kan je [hier](https://github.com/thomasberrens/Gemeente-Amsterdam/tree/develop/Assets/Scripts/ScenarioBuilder) vinden.
  
